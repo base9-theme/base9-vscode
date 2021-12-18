@@ -1,0 +1,72 @@
+{
+  "name": "base10-vscode",
+  "displayName": "Base10 Theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.61.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*",
+    "onCommand:base10-vscode.generate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "base10-vscode.generate",
+        "title": "Generate Base10 theme"
+      }
+    ],
+    "configuration": {
+      "title": "Base10",
+      "properties": {
+        "base10.palette": {
+          "type": "string",
+          "default": "181818-d8d8d8-ffffff-ab4642-dc9656-f7ca88-a1b56c-86c1b9-7cafc2-ba8baf",
+          "description": "test description",
+          "pattern": "([0-9a-fA-F]{6}-){9}[0-9a-fA-F]{6}"
+        }
+      }
+    },
+    "themes": [
+      {
+        "label": "Base 10",
+        "uiTheme": "vs-dark",
+        "path": "./themes/base10.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.2",
+    "@types/glob": "^7.1.4",
+    "@types/lodash": "^4.14.178",
+    "@types/mocha": "^9.0.0",
+    "@types/mustache": "^4.1.2",
+    "@types/node": "14.x",
+    "@types/vscode": "^1.63.0",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "@vscode/test-electron": "^1.6.2",
+    "color": "^4.1.0",
+    "eslint": "^8.1.0",
+    "glob": "^7.1.7",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "mocha": "^9.1.3",
+    "mustache": "^4.2.0",
+    "typescript": "^4.4.4",
+    "yaml": "^1.10.2"
+  }
+}

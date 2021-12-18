@@ -1,0 +1,92 @@
+xxx: bg
+todo: todo11
+todo_template_x: 1
+
+ansi_black: bg
+ansi_red: red
+ansi_green: green
+ansi_yellow: yellow
+ansi_blue: blue
+ansi_magenta: magenta
+ansi_cyan: cyan
+ansi_white: fg
+ansi_bright_black: fg_b
+ansi_bright_red: red_h
+ansi_bright_green: green_h
+ansi_bright_yellow: yellow_h
+ansi_bright_blue: blue_h
+ansi_bright_magenta: magenta_h
+ansi_bright_cyan: cyan_h
+ansi_bright_white: fg_h
+
+bg: b0
+fg: b1
+fg_h: b2
+hl: b2
+
+# ready
+$good: green
+
+# semi ready
+$debug: red
+$warning: yellow
+link: blue
+$info: blue
+highlight_b: secondary_b
+separator: primary_s
+drop_b: bg_s
+line_number: secondary_b
+fold_b: fg_b
+
+
+# to pick
+$primary: c6
+$secondary: c4
+$selection: primary # when user selects something
+search_b: fg_b
+
+line_number_b: bg
+
+fg_b2: fg_b
+$nontext: fg
+# $suggestion: fg
+suggestion_b: bg_s
+
+# temporary
+$activity: primary
+
+# semantics
+
+d_BG: bg
+d_FG: fg
+d_SELECTION: fg_b
+d_COMMENT: fg_b
+d_RED: c1
+d_ORANGE: c2
+d_YELLOW: c3
+d_GREEN: c4
+d_CYAN: c5
+d_PURPLE: c6
+d_PINK: c7
+d_WHITE: hl
+d_BGLighter: fg_b
+d_BGLight: fg_b
+d_BGDark: bg
+d_BGDarker: bg
+
+$error: red
+$marking: c3
+$rare: c4
+$common: c5
+$important: c6
+$special: c7 # need special attention, should be only highlighting very small portion of the ui.
+
+heading: important
+comment: fg_s
+
+string: marking
+constant: todo
+static: primary
+variable: fg
+
+# where is widget hover
