@@ -1,12 +1,26 @@
 import Color from 'color';
-import { SSL_OP_PKCS1_CHECK_1 } from 'constants';
-import _, { kebabCase } from 'lodash';
+import { PRIORITY_BELOW_NORMAL, SSL_OP_PKCS1_CHECK_1 } from 'constants';
+import _, { map as mapRenamed } from 'lodash';
 import Mustache from 'mustache';
+console.log(mapRenamed);
 
+// a = "asd",)]
 // asdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+// 282936-e9e9f4-ffffff-ea51b2-b45bcf-00f769-ebff87-a1efe4-62d6e8-b45bcf
+// 282936-e9e9f4-ffffff-ff5555-ffb86c-f1fa8c-50fa7b-8be9fd-bd93f9-ff79c6
 
+// - &SELECTION '#44475A'
+//     - &COMMENT   '#6272A4'
+//     - &CYAN      '#8BE9FD'
+//     - &GREEN     '#50FA7B'
+//     - &ORANGE    '#FFB86C'
+//     - &PINK      '#FF79C6'
+//     - &PURPLE    '#BD93F9'
+//     - &RED       '#FF5555'
+//     - &YELLOW    '#F1FA8C'
 
 function difference(c1: Color, c2: Color) {
+    cc
     const f = Math.abs;
     const l1 = c1.rgb().array();
     const l2 = c2.rgb().array();
@@ -85,19 +99,19 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
         m.set(name+"_3", c.mix(bg, r2));
     }
 
-    assignColorShades("c1", palette[2]);
-    assignColorShades("c2", palette[3]);
-    assignColorShades("c3", palette[4]);
-    assignColorShades("c4", palette[5]);
-    assignColorShades("c5", palette[6]);
-    assignColorShades("c6", palette[7]);
-    assignColorShades("c7", palette[8]);
+    assignColorShades("c1", palette[3]);
+    assignColorShades("c2", palette[4]);
+    assignColorShades("c3", palette[5]);
+    assignColorShades("c4", palette[6]);
+    assignColorShades("c5", palette[7]);
+    assignColorShades("c6", palette[8]);
+    assignColorShades("c7", palette[9]);
 
-    assignColorShades("red", cs6[order2[0]]);
-    assignColorShades("yellow", cs6[order2[1]]);
-    assignColorShades("green", cs6[order2[2]]);
-    assignColorShades("cyan", cs6[order2[3]]);
-    assignColorShades("blue", cs6[order2[4]]);
+    assignColorShades("red",     cs6[order2[0]]);
+    assignColorShades("yellow",  cs6[order2[1]]);
+    assignColorShades("green",   cs6[order2[2]]);
+    assignColorShades("cyan",    cs6[order2[3]]);
+    assignColorShades("blue",    cs6[order2[4]]);
     assignColorShades("magenta", cs6[order2[5]]);
 
     m.set("fg_b", fg.mix(bg, 1-r2));
@@ -118,8 +132,8 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
     m.set("todo_template_5", Color("#0000FF")); //blue
     m.set("todo_template_6", Color("#FF00FF")); //magenta
     m.set("todo_template_7", Color("#FF8000")); //orange
-    m.set("todo_template_8", Color("#40FFFF")); //green2
-    m.set("todo_template_9", Color("#0080FF")); //blue2
+    m.set("todo_template_8", Color("#000000")); //black
+    m.set("todo_template_9", Color("#808080")); //gray
 
     m.set("d_TEMP_QUOTES", Color("#E9F284"));
     m.set("d_TEMP_PROPERTY", Color("#8BE9FE"));
@@ -127,9 +141,6 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
 
 
     function fill(obj: Map<string, string>, left: string, stop?: string): boolean {
-        if(stop === "error") {
-            console.log("follow error: "+left);
-        }
         if(m.has(left)) {
             return true;
         }
@@ -160,11 +171,24 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
         }
     });
     const todo_x = mapping.todo_template_x;
-    _.times(100, i => {
+    _.times(500, i => {
         let i2 = i;
-        const x0 = i2%10;
-        const x1 = (i2/10)|0;
-        m2.set("todo"+i, "todo_template_"+(todo_x ? x0 : x1));
+        let color = "todo";
+        switch(todo_x) {
+            case "bg":
+                color = "bg";
+                break;
+            case "1":
+                color = "todo_template_"+(i2%10);
+                break;
+            case "2":
+                color = "todo_template_"+(((i2/10)|0)%10);
+                break;
+            case "3":
+                color = "todo_template_"+((i2/100)|0);
+                break;
+        }
+        m2.set("todo"+i, color);
     })
 
     _.each([...m2.entries()], ([key]) => {
@@ -174,11 +198,6 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
     });
 
     const rtn = Object.fromEntries(m);
-    // _.each(rtn, (v,k) => {
-    //     if(v == undefined) {
-    //         console.log(k);
-    //     }
-    // });
     return rtn;
 }
 // export type NamedColors = ReturnType<typeof getNamedColors>;

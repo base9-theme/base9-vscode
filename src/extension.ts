@@ -9,8 +9,8 @@ import yaml from 'yaml';
 
 const PALETTE = 'base10.palette';
 const themeFile: string = path.resolve(__dirname, '../themes/base10.json');
-const templateFile: string = path.resolve(__dirname, '../themes/base10.mustache.json');
-const semanticFile: string = path.resolve(__dirname, '../src/semantic.yaml');
+const templateFile: string = path.resolve(__dirname, '../src/base10.mustache.yml');
+const semanticFile: string = path.resolve(__dirname, '../src/semantic.yml');
 
 
 
@@ -60,7 +60,8 @@ async function generateTheme(palette?: string): Promise<void> {
 
 	const cs = _.map(palette.split("-"), c => Color("#"+c));
 	const semanticObj = yaml.parse(semantic) as { [k: string]: string };
-	const output = render(template, cs, semanticObj);
+	const outputYaml = render(template, cs, semanticObj);
+	const output = JSON.stringify(yaml.parse(outputYaml), undefined, "  ");
 
 	fs.writeFileSync(themeFile, output);
 
