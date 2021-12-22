@@ -1,4 +1,4 @@
-# base10-vscode README
+# base9-vscode README
 
 ## asdf
 
@@ -19,7 +19,7 @@ function f1(x) {
 
 ## Contribute
 
-### `themes/base10.mustache.json`:
+### `themes/base9.mustache.json`:
 
 Add comments at the end of a line to:
 - explain why this color

@@ -1,10 +1,10 @@
 ---
 "$schema": vscode://schemas/color-theme
-name: Base10
+name: base9
 author: Forrest Li
 maintainers:
 - Forrest Li <lijiaqigreat@gmail.com>
-semanticClass: theme.base10
+semanticClass: theme.base9
 semanticHighlighting: true
 colors:
   terminal.background: "{{bg}}"

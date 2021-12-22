@@ -1,6 +1,6 @@
 {
-  "name": "bse10-vscode",
-  "displyName": "Base10 Theme",
+  "name": "base9-vscode",
+  "displyName": "base9 Theme",
   "description": "",
   "version": "0.0.1",
   "engines": {
@@ -10,33 +10,32 @@
     "Other"
   ],
   "activationEvents": [
-    "*",
-    "onCommand:base10-vscode.generate"
+    "onCommand:base9-vscode.generate"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "base10-vscode.generate",
-        "title": "Generate Base10 theme"
+        "command": "base9-vscode.generate",
+        "title": "Generate base9 theme"
       }
     ],
     "configuration": {
-      "title": "Base10",
+      "title": "Base9",
       "properties": {
-        "base10.palette": {
+        "base9.palette": {
           "type": "string",
           "default": "181818-d8d8d8-ab4642-dc9656-f7ca88-a1b56c-86c1b9-7cafc2-ba8baf",
-          "description": "test description",
+          "markdownDescription": "9 colors sepearated by `-`. [Click](command:base9-vscode.generate) to generate",
           "pattern": "([0-9a-fA-F]{6}-){8}[0-9a-fA-F]{6}"
         }
       }
     },
     "themes": [
       {
-        "label": "Base 10",
+        "label": "Base 9",
         "uiTheme": "vs-dark",
-        "path": "./themes/base10.json"
+        "path": "./themes/base9.json"
       }
     ]
   },
