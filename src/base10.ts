@@ -1,8 +1,7 @@
 import Color from 'color';
 import { PRIORITY_BELOW_NORMAL, SSL_OP_PKCS1_CHECK_1 } from 'constants';
-import _, { map as mapRenamed } from 'lodash';
+import _ from 'lodash';
 import Mustache from 'mustache';
-console.log(mapRenamed);
 
 // a = "asd",)]
 // asdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -20,29 +19,39 @@ console.log(mapRenamed);
 //     - &YELLOW    '#F1FA8C'
 
 function difference(c1: Color, c2: Color) {
-    cc
     const f = Math.abs;
     const l1 = c1.rgb().array();
     const l2 = c2.rgb().array();
     return f(l1[0] - l2[0]) + f(l1[1] - l2[1]) + f(l1[2] - l2[2]);
 }
 
-const getHues2Constant1: number[][] = [
-    [0, 1, 2, 3, 4, 5],
-    [1, 2, 3, 4, 5, 0],
-    [2, 3, 4, 5, 0, 1],
-    [3, 4, 5, 0, 1, 2],
-    [4, 5, 0, 1, 2, 3],
-    [5, 0, 1, 2, 3, 4],
+function iteratePermutations(f: (order: number[]) => void) {
+    // c is an encoding of the stack state. c[k] encodes the for-loop counter for when generate(k - 1, A) is called
+    const c = [0,0,0,0,0,0,0];
+    const A = [0,1,2,3,4,5,6];
+    f(A);
+    
+    const n = 7;
+    let tmp = 0;
+    let i = 0;
+    while(i < n){
+        if(c[i] < i) {
+            const swapI = (i%2)===0 ? 0 : c[i];
+            tmp = A[swapI];
+            A[swapI] = A[i];
+            A[i] = tmp;
+            f(A);
 
-    [5, 4, 3, 2, 1, 0],
-    [0, 5, 4, 3, 2, 1],
-    [1, 0, 5, 4, 3, 2],
-    [2, 1, 0, 5, 4, 3],
-    [3, 2, 1, 0, 5, 4],
-    [4, 3, 2, 1, 0, 5],
-];
-const getHues2Constant2 = [
+            c[i] += 1;
+            i = 0;
+        } else {
+            c[i] = 0;
+            i += 1;
+        }
+    }
+}
+
+const hues = [
     Color("#FF0000"),
     Color("#FFFF00"),
     Color("#00FF00"),
@@ -51,77 +60,61 @@ const getHues2Constant2 = [
     Color("#FF00FF"),
 ];
 
+function getTrueColorOrder(colors: Color[]) {
+    let min = Infinity;
+    let minOrder: number[] = [];
+    iteratePermutations(order => {
+        const diff =
+            difference(colors[order[0]], hues[0]) +
+            difference(colors[order[1]], hues[1]) +
+            difference(colors[order[2]], hues[2]) +
+            difference(colors[order[3]], hues[3]) +
+            difference(colors[order[4]], hues[4]) +
+            difference(colors[order[5]], hues[5]);
+        if(min > diff) {
+            min = diff;
+            minOrder = order.slice();
+        }
+    });
+    return minOrder;
+}
+
+
 export function getNamedColors(palette: Color[], mapping: {[k: string]: string}, r1: number = 0.5, r2: number = 0.25): { [k: string]: Color } {
-    const cs6 = [palette[3], palette[5], palette[6], palette[7], palette[8], palette[9]];
-    const order: number[] = _.minBy(getHues2Constant1, (order: number[]) =>
-        difference(cs6[order[0]], getHues2Constant2[0]) +
-        difference(cs6[order[1]], getHues2Constant2[1]) +
-        difference(cs6[order[2]], getHues2Constant2[2]) +
-        difference(cs6[order[3]], getHues2Constant2[3]) +
-        difference(cs6[order[4]], getHues2Constant2[4]) +
-        difference(cs6[order[5]], getHues2Constant2[5])
-    )!;
-
-    const order2 = [];
-    order2[order[0]] = 0;
-    order2[order[1]] = 1;
-    order2[order[2]] = 2;
-    order2[order[3]] = 3;
-    order2[order[4]] = 4;
-    order2[order[5]] = 5;
-
-    const bg =  palette[0];
-    const fg =  palette[1];
-    const hl = palette[2];
-
+    const background = palette[0];
+    const foreground = palette[1];
+    const colors = palette.slice(2);
+    const order =  getTrueColorOrder(colors);
     const m = new Map<string, Color>();
 
-    m.set("b0", palette[0]);
-    m.set("b1", palette[1]);
-    m.set("b2", palette[2]);
-    m.set("b3", palette[3]);
-    m.set("b4", palette[4]);
-    m.set("b5", palette[5]);
-    m.set("b6", palette[6]);
-    m.set("b7", palette[7]);
-    m.set("b8", palette[8]);
-    m.set("b9", palette[9]);
-
-    function assignColorShades(name: string, c: Color) {
-        m.set(name, c);
-        m.set(name+"_h", c.mix(hl, r1));
-
-        m.set(name+"_b", c.mix(bg, 1-r2));
-        m.set(name+"_s", c.mix(bg, r2));
-
-        m.set(name+"_1", c.mix(bg, 1-r2));
-        m.set(name+"_2", c.mix(bg, r1));
-        m.set(name+"_3", c.mix(bg, r2));
+    function setColor(key: string, c: Color) {
+        m.set(`${key}`, c);
+        m.set(`${key}_b`, c.mix(background, 1-r2));
+        m.set(`${key}_m`, c.mix(background, r1));
+        m.set(`${key}_s`, c.mix(background, r2));
+        m.set(`${key}_h`, c.mix(foreground, r1));
     }
+    setColor("c1", colors[0]);
+    setColor("c2", colors[1]);
+    setColor("c3", colors[2]);
+    setColor("c4", colors[3]);
+    setColor("c5", colors[4]);
+    setColor("c6", colors[5]);
+    setColor("c7", colors[6]);
 
-    assignColorShades("c1", palette[3]);
-    assignColorShades("c2", palette[4]);
-    assignColorShades("c3", palette[5]);
-    assignColorShades("c4", palette[6]);
-    assignColorShades("c5", palette[7]);
-    assignColorShades("c6", palette[8]);
-    assignColorShades("c7", palette[9]);
-
-    assignColorShades("red",     cs6[order2[0]]);
-    assignColorShades("yellow",  cs6[order2[1]]);
-    assignColorShades("green",   cs6[order2[2]]);
-    assignColorShades("cyan",    cs6[order2[3]]);
-    assignColorShades("blue",    cs6[order2[4]]);
-    assignColorShades("magenta", cs6[order2[5]]);
-
-    m.set("fg_b", fg.mix(bg, 1-r2));
-    m.set("fg_s", fg.mix(bg, r2));
-    m.set("fg_h", hl);
-    m.set("fg_1", fg.mix(bg, 1-r2));
-    m.set("fg_2", fg.mix(bg, r1));
-    m.set("fg_3", fg.mix(bg, r2));
-    //TODO
-    m.set("bg_s", fg.mix(bg, 1-r2/4));
+    setColor("red",     colors[order[0]]);
+    setColor("yellow",  colors[order[1]]);
+    setColor("green",   colors[order[2]]);
+    setColor("cyan",    colors[order[3]]);
+    setColor("blue",    colors[order[4]]);
+    setColor("magenta", colors[order[5]]);
+    
+    m.set("background", background);
+    m.set("background_s", foreground.mix(background, 1-r2/4));
+    m.set("background_ss", foreground.mix(background, 1-r2));
+    m.set("foreground", foreground);
+    m.set("foreground_s", foreground.mix(background, r2));
+    m.set("foreground_ss", foreground.mix(background, r1));
 
     
     m.set("todo_template_0", Color("#FFFFFF")); //white
@@ -161,7 +154,7 @@ export function getNamedColors(palette: Color[], mapping: {[k: string]: string},
 
     const m2 = new Map<string, string>();
     // const variations = ["_b", "", "_s", "_h"];
-    const variations = ["", "_h", "_1", "_2", "_3", "_b", "_s"];
+    const variations = ["", "_h", "_s", "_m", "_b"];
     _.each(mapping, (value,key) => {
         if(key.startsWith("$")) {
             const key2 = key.substring(1);

@@ -1,121 +1,90 @@
-xxx: bg
+xxx: background
 todo: todo_template_1
 todo_template_x: "todo"
 
+c0: foreground
+c0_h: foreground
+c0_s: foreground_s
+c0_m: foreground_ss
+c0_b: background_ss
 
-ansi_black: bg
+
+ansi_black: background
 ansi_red: red
 ansi_green: green
 ansi_yellow: yellow
 ansi_blue: blue
 ansi_magenta: magenta
 ansi_cyan: cyan
-ansi_white: fg
-ansi_bright_black: fg_b
+ansi_white: foreground_s
+ansi_bright_black: background_ss
 ansi_bright_red: red_h
 ansi_bright_green: green_h
 ansi_bright_yellow: yellow_h
 ansi_bright_blue: blue_h
 ansi_bright_magenta: magenta_h
 ansi_bright_cyan: cyan_h
-ansi_bright_white: fg_h
+ansi_bright_white: foreground
 
 
-bg: b0
-fg: b1
-fg_h: b2
-hl: b2
 
 # ready
 
 # semi ready
-fold_b: fg_b
 
 # to pick
 
-fg_b2: fg_b
-$nontext: fg
-# $suggestion: fg
-suggestion_b: bg_s
+nontext: foreground
+nontext_s: foreground_s
 
-# temporary
-$activity: primary
-
-# semantics
-
-d_BG: bg
-d_FG: fg
-d_SELECTION: fg_b
-d_COMMENT: fg_b
-d_RED: c1
-d_ORANGE: c2
-d_YELLOW: c3
-d_GREEN: c4
-d_CYAN: c5
-d_PURPLE: c6
-d_PINK: c7
-d_WHITE: hl
-d_BGLighter: fg_b
-d_BGLight: fg_b
-d_BGDark: bg
-d_BGDarker: bg
-
-
-
-$error: c1
-$common_todo: c2 # rename
+# by definition
+$symbol: c1 # highlight operator and special characters.
+$tag: c2 # TODO add description
 $string: c3 # commonly used
 $function: c4
-$ordinary: c5
-$primary: c6
-# $secondary: c7
-$secondary: c5
+$secondary: c5 # need special attention, should be only for small portion of the ui.
+$primary: c6 # main color in ui
+$keyword: c7
 
-# absolute
+# aliases in absolute color
+$error: red
 $good: green
 $warning: yellow
 $info: blue
 $link: blue
 
-$important: primary
-$special: secondary # need special attention, should be only for small portion of the ui.
-$debug: error # anything related to debugging
-$heading: important
 
-comment: fg_s
-
-
-
-# where is widget hover
-# css classes and ids
-
+# used in UI
+$ordinary: secondary
 $selection: primary # when user selects something
-cursor: fg
-cursor_b: bg
-search_b: fg_b
+comment: foreground_s
+cursor: foreground
+cursor_b: background
+search_b: background_ss
 link: blue # url or links in ui
 $highlight: secondary # for ui hovering and other types of highlight
-$match: common_todo
-text_selection_b: selection_2
-separator: fg_b
-separator_h: fg_s
-$scroll: fg
-drag_b: fg_b # when user dragging a ui component
-$line_number: fg
+$match: tag
+text_selection_b: selection_m
+separator: background_ss
+separator_h: foreground_s
+$scroll: c0
+drag_b: background_ss # when user dragging a ui component
+line_number: foreground
+line_number_s: foreground_s
+line_number_m: foreground_ss
+line_number_b: background_ss
 $quote: secondary # for displaying quotes in a document or ui context
+fold_b: background_ss
 
+# not in UI, only in syntax highlighting
 static: primary
-parameter: common_todo
 decorator: function
-type: ordinary
-
-keyword: c7
 class: primary
-tag: common_todo
 literal: function
-symbol: error
-variable: fg
+variable: foreground
 variable_instance: ordinary
 constant: function
 
+# not yet used
 folder: cyan
+$debug: error # anything related to debugging

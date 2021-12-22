@@ -11,13 +11,13 @@ colors:
   # contrastBorder: "{{todo2}}"
 
   # Base colors
-  focusBorder: "{{primary_2}}" #  to be different from input border
-  foreground: "{{fg}}"
+  focusBorder: "{{primary_m}}" #  to be different from input border
+  foreground: "{{foreground}}"
   widget.shadow: null # no shadow
   selection.background: "{{text_selection_b}}" #  when selecting text
   descriptionForeground: "{{primary}}"
   errorForeground: "{{error}}"
-  icon.foreground: "{{fg}}"
+  icon.foreground: "{{foreground}}"
   sash.hoverBorder: "{{separator}}"
 
   # Window border
@@ -27,43 +27,43 @@ colors:
   # Text colors
   # textBlockQuote.background: "{{todo7}}"
   # textBlockQuote.border: "{{todo8}}"
-  textCodeBlock.background: "{{fg_b}}"
+  textCodeBlock.background: "{{background_ss}}"
   textLink.activeForeground: "{{primary}}"
   textLink.foreground: "{{primary_s}}"
   textPreformat.foreground: "{{quote}}"
   # textSeparator.foreground: "{{todo10}}"
 
   # Action colors
-  toolbar.hoverBackground: "{{fg_b}}"
+  toolbar.hoverBackground: "{{background_ss}}"
   toolbar.hoverOutline: null
   # toolbar.activeBackground: "{{todo11}}"
 
   # Button control
   button.background: "{{primary_s}}"
-  button.foreground: "{{bg}}"
+  button.foreground: "{{background}}"
   button.border: null # no border
   button.hoverBackground: "{{primary}}"
   button.secondaryBackground: "{{secondary_s}}"
-  button.secondaryForeground: "{{bg}}"
+  button.secondaryForeground: "{{background}}"
   button.secondaryHoverBackground: "{{secondary}}"
   checkbox.background: null
   checkbox.foreground: null
   checkbox.border: null
 
   # Dropdown control
-  dropdown.background: "{{bg_s}}"
+  dropdown.background: "{{background_s}}"
   dropdown.listBackground: null
   dropdown.border: "{{primary_s}}"
-  dropdown.foreground: "{{fg}}"
+  dropdown.foreground: "{{foreground}}"
 
   # Input control
-  input.background: "{{bg}}"
-  input.foreground: "{{fg}}"
+  input.background: "{{background}}"
+  input.foreground: "{{foreground}}"
   input.border: "{{primary_s}}"
-  input.placeholderForeground: "{{fg_s}}"
+  input.placeholderForeground: "{{foreground_s}}"
   inputOption.activeBackground: "{{primary_s}}"
   inputOption.activeBorder: null
-  inputOption.activeForeground: "{{bg}}"
+  inputOption.activeForeground: "{{background}}"
   inputValidation.errorBackground: "{{error_b}}"
   inputValidation.errorForeground: null
   inputValidation.errorBorder: "{{error}}"
@@ -81,7 +81,7 @@ colors:
   scrollbarSlider.hoverBackground: "{{scroll_s}}"
 
   # Badge
-  badge.foreground: "{{bg}}"
+  badge.foreground: "{{background}}"
   badge.background: "{{secondary}}"
 
   # Progress bar
@@ -89,7 +89,7 @@ colors:
 
   # Lists and trees
   list.activeSelectionBackground: "{{selection_b}}"
-  list.activeSelectionForeground: "{{fg}}"
+  list.activeSelectionForeground: "{{foreground}}"
   list.activeSelectionIconForeground: null
   list.dropBackground: "{{drag_b}}"
   list.focusBackground: null # do not highlight. we have focus border
@@ -97,9 +97,9 @@ colors:
   list.focusHighlightForeground: "{{highlight_h}}"
   list.focusOutline: null
   list.highlightForeground: "{{highlight_h}}"
-  list.hoverBackground: "{{fg_b}}"
+  list.hoverBackground: "{{background_ss}}"
   list.hoverForeground: null
-  list.inactiveSelectionBackground: "{{fg_b}}"
+  list.inactiveSelectionBackground: "{{background_ss}}"
   list.inactiveSelectionForeground: null
   list.inactiveSelectionIconForeground: null
   list.inactiveFocusBackground: null # do not highlight
@@ -113,28 +113,28 @@ colors:
   # list.filterMatchBackground: "{{todo29}}"
   # list.filterMatchBorder: "{{todo30}}"
   # list.deemphasizedForeground: "{{todo31}}"
-  tree.indentGuidesStroke: "{{fg_s}}"
+  tree.indentGuidesStroke: "{{foreground_s}}"
   tree.tableColumnsBorder: "{{separator}}"
 
   # Activity Bar
-  activityBar.background: "{{bg}}"
+  activityBar.background: "{{background}}"
   activityBar.dropBorder: "{{primary}}"
-  activityBar.foreground: "{{fg}}"
-  activityBar.inactiveForeground: "{{fg_s}}"
+  activityBar.foreground: "{{foreground}}"
+  activityBar.inactiveForeground: "{{foreground_s}}"
   activityBar.border: null
   activityBarBadge.background: "{{secondary}}"
-  activityBarBadge.foreground: "{{bg}}"
+  activityBarBadge.foreground: "{{background}}"
   activityBar.activeBorder: "{{primary}}"
   activityBar.activeBackground: "{{primary_b}}"
   activityBar.activeFocusBorder: null
 
   # Side Bar
-  sideBar.background: "{{bg_s}}"
+  sideBar.background: "{{background_s}}"
   sideBar.foreground: null
   sideBar.border: null
   sideBar.dropBackground: "{{drag_b}}"
-  sideBarTitle.foreground: "{{fg}}"
-  sideBarSectionHeader.background: "{{bg}}"
+  sideBarTitle.foreground: "{{foreground}}"
+  sideBarSectionHeader.background: "{{background}}"
   sideBarSectionHeader.foreground: null
   sideBarSectionHeader.border: "{{separator}}"
 
@@ -158,25 +158,25 @@ colors:
   editorGroup.border: "{{separator}}"
   editorGroup.dropBackground: "{{drag_b}}"
   editorGroupHeader.noTabsBackground: null # editorGroupHeader.tabsBackground
-  editorGroupHeader.tabsBackground: "{{bg_s}}"
+  editorGroupHeader.tabsBackground: "{{background_s}}"
   editorGroupHeader.tabsBorder: null
   editorGroupHeader.border: null
   # editorGroup.emptyBackground: "{{todo49}}"
   # editorGroup.focusedEmptyBorder: "{{todo50}}"
-  tab.activeBackground: "{{bg}}"
+  tab.activeBackground: "{{background}}"
   tab.unfocusedActiveBackground: null # default to tab.activeBackground
-  tab.activeForeground: "{{fg}}"
+  tab.activeForeground: "{{foreground}}"
   tab.border: null
   tab.activeBorder: null
   tab.unfocusedActiveBorder: null
   tab.activeBorderTop: null
   tab.unfocusedActiveBorderTop: null
-  tab.lastPinnedBorder: "{{fg_b}}"
-  tab.inactiveBackground: "{{bg_s}}"
+  tab.lastPinnedBorder: "{{background_ss}}"
+  tab.inactiveBackground: "{{background_s}}"
   tab.unfocusedInactiveBackground: null
   tab.inactiveForeground: null # default to
-  tab.unfocusedActiveForeground: "{{fg}}"
-  tab.unfocusedInactiveForeground: "{{fg}}"
+  tab.unfocusedActiveForeground: "{{foreground}}"
+  tab.unfocusedInactiveForeground: "{{foreground}}"
   tab.hoverBackground: null
   tab.unfocusedHoverBackground: null
   tab.hoverForeground: null
@@ -193,19 +193,19 @@ colors:
 
   # Editor colors
   editor.background: "{{xxx}}"
-  editor.foreground: "{{fg}}"
-  editorLineNumber.foreground: "{{line_number_2}}"
+  editor.foreground: "{{foreground}}"
+  editorLineNumber.foreground: "{{line_number_m}}"
   editorLineNumber.activeForeground: "{{line_number}}"
   editorCursor.background: "{{cursor_b}}"
   editorCursor.foreground: "{{cursor}}"
-  editor.selectionBackground: "{{selection_2}}"
+  editor.selectionBackground: "{{selection_m}}"
   editor.selectionForeground: null
   editor.inactiveSelectionBackground: null
   editor.selectionHighlightBackground: "{{highlight_b}}"
   editor.selectionHighlightBorder: null
   editor.wordHighlightBackground: "{{highlight_b}}"
   editor.wordHighlightBorder: null
-  editor.wordHighlightStrongBackground: "{{highlight_2}}"
+  editor.wordHighlightStrongBackground: "{{highlight_m}}"
   editor.wordHighlightStrongBorder: null
   editor.findMatchBackground: "{{match_b}}"
   editor.findMatchHighlightBackground: "{{match_b}}"
@@ -217,7 +217,7 @@ colors:
   # searchEditor.findMatchBorder: "{{todo83}}"
   # searchEditor.textInputBorder: "{{todo84}}"
   editor.hoverHighlightBackground: null
-  editor.lineHighlightBackground: "{{bg_s}}"
+  editor.lineHighlightBackground: "{{background_s}}"
   editor.lineHighlightBorder: null
   editorUnicodeHighlight.border: "{{nontext}}"
   editorLink.activeForeground: "{{link}}"
@@ -225,21 +225,21 @@ colors:
   editor.rangeHighlightBorder: null # default to editor.findMatchBorder
   # editor.symbolHighlightBackground: "{{todo92}}"
   # editor.symbolHighlightBorder: "{{todo93}}"
-  editorWhitespace.foreground: "{{fg_b}}"
-  editorIndentGuide.background: "{{fg_b}}"
-  editorIndentGuide.activeBackground: "{{fg_2}}"
+  editorWhitespace.foreground: "{{background_ss}}"
+  editorIndentGuide.background: "{{background_ss}}"
+  editorIndentGuide.activeBackground: "{{foreground_ss}}"
   # editorInlayHint.background: "{{todo99}}"
   # editorInlayHint.foreground: "{{todo100}}"
   # editorInlayHint.typeForeground: "{{todo101}}"
   # editorInlayHint.typeBackground: "{{todo102}}"
   # editorInlayHint.parameterForeground: "{{todo103}}"
   # editorInlayHint.parameterBackground: "{{todo104}}"
-  editorRuler.foreground: "{{fg_b}}"
+  editorRuler.foreground: "{{background_ss}}"
   # editor.linkedEditingBackground: "{{todo107}}"
   # editorCodeLens.foreground: "{{todo108}}"
   editorLightBulb.foreground: "{{warning}}"
   editorLightBulbAutoFix.foreground: "{{function}}"
-  editorBracketMatch.background: "{{highlight_2}}"
+  editorBracketMatch.background: "{{highlight_m}}"
   editorBracketMatch.border: null
   editorBracketHighlight.foreground1: "{{c2}}"
   editorBracketHighlight.foreground2: "{{c3}}"
@@ -307,10 +307,10 @@ colors:
   diffEditor.removedTextBackground: "{{error_b}}"
   diffEditor.removedTextBorder: null # do not highlight
   diffEditor.border: "{{separator}}"
-  diffEditor.diagonalFill: "{{fg_b}}"
+  diffEditor.diagonalFill: "{{background_ss}}"
   # Editor widget colors
   editorWidget.foreground: null # default to foreground
-  editorWidget.background: "{{bg_s}}"
+  editorWidget.background: "{{background_s}}"
   editorWidget.border: "{{separator}}"
   # editorWidget.resizeBorder: "{{todo181}}"
   editorSuggestWidget.background: null # default to eidtorWidget.background
@@ -326,7 +326,7 @@ colors:
   editorHoverWidget.background: null # default to editorWidget.background
   editorHoverWidget.border: null # default to eidtorWidget.border
   # editorHoverWidget.highlightForeground: "{{todo194}}"
-  editorHoverWidget.statusBarBackground: "{{bg_s}}"
+  editorHoverWidget.statusBarBackground: "{{background_s}}"
   # editorGhostText.border: "{{todo196}}"
   # editorGhostText.background: "{{todo197}}"
   # editorGhostText.foreground: "{{todo198}}"
@@ -373,8 +373,8 @@ colors:
   panel.border: null
   panel.dropBorder: "{{drag_b}}"
   panelTitle.activeBorder: "{{separator_h}}"
-  panelTitle.activeForeground: "{{fg}}"
-  panelTitle.inactiveForeground: "{{fg_s}}"
+  panelTitle.activeForeground: "{{foreground}}"
+  panelTitle.inactiveForeground: "{{foreground_s}}"
   # panelInput.border: "{{todo238}}"
   # panelSection.border: "{{todo239}}"
   # panelSection.dropBackground: "{{todo2}}40"
@@ -384,7 +384,7 @@ colors:
 
   # Status Bar colors
   statusBar.background: "{{primary_b}}"
-  statusBar.foreground: "{{fg}}"
+  statusBar.foreground: "{{foreground}}"
   statusBar.border: null
   statusBar.debuggingBackground: "{{debug_b}}" # not tested
   statusBar.debuggingForeground: null # not tested
@@ -393,16 +393,16 @@ colors:
   # statusBar.noFolderBackground: "{{todo251}}"
   # statusBar.noFolderBorder: "{{todo252}}"
   # statusBarItem.activeBackground: "{{todo253}}"
-  statusBarItem.hoverBackground: "{{fg}}40"
+  statusBarItem.hoverBackground: "{{foreground}}40"
   # statusBarItem.prominentForeground: "{{todo255}}"
   # statusBarItem.prominentBackground: "{{todo256}}"
   # statusBarItem.prominentHoverBackground: "{{todo257}}"
   statusBarItem.remoteBackground: "{{secondary_b}}"
-  statusBarItem.remoteForeground: "{{fg}}"
-  statusBarItem.errorBackground: "{{error_2}}" # to make it stand out
-  statusBarItem.errorForeground: "{{fg}}"
-  statusBarItem.warningBackground: "{{warning_2}}" # not tested
-  statusBarItem.warningForeground: "{{fg}}" # not tested
+  statusBarItem.remoteForeground: "{{foreground}}"
+  statusBarItem.errorBackground: "{{error_m}}" # to make it stand out
+  statusBarItem.errorForeground: "{{foreground}}"
+  statusBarItem.warningBackground: "{{warning_m}}" # not tested
+  statusBarItem.warningForeground: "{{foreground}}" # not tested
 
   # Title Bar colors # TODO
   # titleBar.activeBackground: "{{todo264}}"
@@ -429,7 +429,7 @@ colors:
   notificationCenterHeader.background: "{{primary_b}}"
   notificationToast.border: null
   notifications.foreground: null
-  notifications.background: "{{bg_s}}"
+  notifications.background: "{{background_s}}"
   notifications.border: null
   notificationLink.foreground: "{{link}}"
   notificationsErrorIcon.foreground: "{{error}}" # not tested
@@ -441,11 +441,11 @@ colors:
   # banner.iconForeground: "{{todo292}}"
 
   # Extensions colors
-  extensionButton.prominentForeground: "{{bg}}"
+  extensionButton.prominentForeground: "{{background}}"
   extensionButton.prominentBackground: "{{primary_s}}"
   extensionButton.prominentHoverBackground: "{{primary}}"
   extensionBadge.remoteBackground: "{{primary_s}}"
-  extensionBadge.remoteForeground: "{{bg}}"
+  extensionBadge.remoteForeground: "{{background}}"
   extensionIcon.starForeground: "{{secondary}}"
   extensionIcon.verifiedForeground: "{{primary}}"
   extensionIcon.preReleaseForeground: "{{primary}}"
@@ -453,42 +453,42 @@ colors:
   # Quick picker colors
   pickerGroup.border: "{{separator}}"
   pickerGroup.foreground: "{{primary}}"
-  quickInput.background: "{{bg_s}}"
+  quickInput.background: "{{background_s}}"
   quickInput.foreground: null
-  quickInputList.focusBackground: "{{fg_b}}"
+  quickInputList.focusBackground: "{{background_ss}}"
   quickInputList.focusForeground: null
   quickInputList.focusIconForeground: null
   quickInputTitle.background: "{{primary_b}}" # not tested
 
   # Keybinding label colors
   keybindingLabel.background: "{{primary_b}}"
-  keybindingLabel.foreground: "{{fg}}"
+  keybindingLabel.foreground: "{{foreground}}"
   keybindingLabel.border: null # no border
   keybindingLabel.bottomBorder: null # no border
 
   # Keyboard shortcut table colors
-  keybindingTable.headerBackground: "{{fg_b}}"
-  keybindingTable.rowsBackground: "{{bg_s}}"
+  keybindingTable.headerBackground: "{{background_ss}}"
+  keybindingTable.rowsBackground: "{{background_s}}"
 
   # Integrated Terminal colors
-  terminal.background: "{{bg}}"
+  terminal.background: "{{background}}"
   terminal.border: "{{separator}}"
-  terminal.foreground: "{{fg}}"
-  terminal.ansiBlack: "{{bg}}"
-  terminal.ansiBlue: "{{blue_s}}"
-  terminal.ansiBrightBlack: "{{fg_b}}"
-  terminal.ansiBrightBlue: "{{blue}}"
-  terminal.ansiBrightCyan: "{{cyan}}"
-  terminal.ansiBrightGreen: "{{green}}"
-  terminal.ansiBrightMagenta: "{{magenta}}"
-  terminal.ansiBrightRed: "{{red}}"
-  terminal.ansiBrightWhite: "{{fg}}"
-  terminal.ansiBrightYellow: "{{yellow}}"
-  terminal.ansiCyan: "{{cyan_s}}"
-  terminal.ansiGreen: "{{green_s}}"
-  terminal.ansiMagenta: "{{magenta_s}}"
-  terminal.ansiRed: "{{red_s}}"
-  terminal.ansiWhite: "{{fg}}"
+  terminal.foreground: "{{foreground}}"
+  terminal.ansiBlack: "{{background}}"
+  terminal.ansiBlue: "{{blue}}"
+  terminal.ansiBrightBlack: "{{background_ss}}"
+  terminal.ansiBrightBlue: "{{blue_h}}"
+  terminal.ansiBrightCyan: "{{cyan_h}}"
+  terminal.ansiBrightGreen: "{{green_h}}"
+  terminal.ansiBrightMagenta: "{{magenta_h}}"
+  terminal.ansiBrightRed: "{{red_h}}"
+  terminal.ansiBrightWhite: "{{foreground}}"
+  terminal.ansiBrightYellow: "{{yellow_h}}"
+  terminal.ansiCyan: "{{cyan}}"
+  terminal.ansiGreen: "{{green}}"
+  terminal.ansiMagenta: "{{magenta}}"
+  terminal.ansiRed: "{{red}}"
+  terminal.ansiWhite: "{{foreground_s}}"
   terminal.ansiYellow: "{{yellow_s}}"
   terminal.selectionBackground: "{{text_selection_b}}"
   terminalCursor.background: null
@@ -548,13 +548,13 @@ colors:
   gitDecoration.renamedResourceForeground: "{{good_s}}"
   gitDecoration.stageModifiedResourceForeground: "{{warning_s}}"
   gitDecoration.stageDeletedResourceForeground: "{{error_s}}"
-  gitDecoration.untrackedResourceForeground: "{{fg_s}}"
-  gitDecoration.ignoredResourceForeground: "{{fg_2}}"
+  gitDecoration.untrackedResourceForeground: "{{foreground_s}}"
+  gitDecoration.ignoredResourceForeground: "{{foreground_ss}}"
   gitDecoration.conflictingResourceForeground: "{{error}}"
   gitDecoration.submoduleResourceForeground: "{{info}}"
 
   # Settings Editor colors
-  settings.headerForeground: "{{fg}}"
+  settings.headerForeground: "{{foreground}}"
   settings.modifiedItemIndicator: "{{primary_s}}"
   settings.dropdownBackground: null
   settings.dropdownForeground: null
@@ -563,21 +563,21 @@ colors:
   settings.checkboxBackground: null
   settings.checkboxForeground: null
   settings.checkboxBorder: null
-  settings.rowHoverBackground: "{{bg_s}}"
+  settings.rowHoverBackground: "{{background_s}}"
   settings.textInputBackground: null
   settings.textInputForeground: null
   settings.textInputBorder: null
   settings.numberInputBackground: null
   settings.numberInputForeground: null
   settings.numberInputBorder: null
-  settings.focusedRowBackground: "{{bg_s}}"
-  settings.focusedRowBorder: "{{primary_2}}"
+  settings.focusedRowBackground: "{{background_s}}"
+  settings.focusedRowBorder: "{{primary_m}}"
 
   # Breadcrumbs colors
-  breadcrumb.foreground: "{{fg}}"
+  breadcrumb.foreground: "{{foreground}}"
   breadcrumb.background: null # default to editor.background
-  breadcrumb.focusForeground: "{{fg}}"
-  breadcrumb.activeSelectionForeground: "{{fg}}"
+  breadcrumb.focusForeground: "{{foreground}}"
+  breadcrumb.activeSelectionForeground: "{{foreground}}"
   breadcrumbPicker.background: null # default to editorWidget.background
 
   # Snippets colors
@@ -590,14 +590,14 @@ colors:
   # symbolIcon.arrayForeground: "{{variable_instance}}"
   # symbolIcon.booleanForeground: "{{literal}}"
   # symbolIcon.classForeground: "{{class}}"
-  # symbolIcon.colorForeground: "{{fg}}"
+  # symbolIcon.colorForeground: "{{foreground}}"
   # symbolIcon.constantForeground: "{{constant}}" # not tested
   # symbolIcon.constructorForeground: "{{function}}"
   # symbolIcon.enumeratorForeground: "{{class}}"
   # symbolIcon.enumeratorMemberForeground: "{{constant}}"
   # symbolIcon.eventForeground: "{{tag}}" # not tested
   # symbolIcon.fieldForeground: "{{variable_instance}}"
-  # symbolIcon.fileForeground: "{{fg}}"
+  # symbolIcon.fileForeground: "{{foreground}}"
   # symbolIcon.folderForeground: "{{folder}}"
   # symbolIcon.functionForeground: "{{function}}"
   # symbolIcon.interfaceForeground: "{{todo429}}" # not tested
@@ -734,7 +734,7 @@ tokenColors:
   - comment
   - meta.separator
   settings:
-    foreground: "{{fg_s}}"
+    foreground: "{{foreground_s}}"
 - name: Function
   scope:
   - entity.name.function
@@ -777,7 +777,7 @@ tokenColors:
 - name: Normal
   scope:
   settings:
-    foreground: "{{fg}}"
+    foreground: "{{foreground}}"
 - name: Highlight
   scope:
   - entity.other.attribute-name.pseudo-class # css

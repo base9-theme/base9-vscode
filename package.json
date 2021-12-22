@@ -26,9 +26,9 @@
       "properties": {
         "base10.palette": {
           "type": "string",
-          "default": "181818-d8d8d8-ffffff-ab4642-dc9656-f7ca88-a1b56c-86c1b9-7cafc2-ba8baf",
+          "default": "181818-d8d8d8-ab4642-dc9656-f7ca88-a1b56c-86c1b9-7cafc2-ba8baf",
           "description": "test description",
-          "pattern": "([0-9a-fA-F]{6}-){9}[0-9a-fA-F]{6}"
+          "pattern": "([0-9a-fA-F]{6}-){8}[0-9a-fA-F]{6}"
         }
       }
     },
