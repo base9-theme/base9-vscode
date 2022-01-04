@@ -1,5 +1,4 @@
 import Color = require('color');
-import { generateKeyPair } from 'crypto';
 import * as vscode from 'vscode';
 import { getNamedColors, getTemplateVariable, render } from './base9';
 import * as fs from 'fs';

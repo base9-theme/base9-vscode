@@ -8,7 +8,7 @@ c0_s: foreground_s
 c0_m: foreground_ss
 c0_b: background_ss
 
-
+# ansi
 ansi_black: background
 ansi_red: red
 ansi_green: green
@@ -25,17 +25,22 @@ ansi_bright_blue: blue_h
 ansi_bright_magenta: magenta_h
 ansi_bright_cyan: cyan_h
 ansi_bright_white: foreground
-
-
-
-# ready
-
-# semi ready
-
-# to pick
-
-nontext: foreground
-nontext_s: foreground_s
+ansi_0: ansi_black
+ansi_1: ansi_red
+ansi_2: ansi_green
+ansi_3: ansi_yellow
+ansi_4: ansi_blue
+ansi_5: ansi_magenta
+ansi_6: ansi_cyan
+ansi_7: ansi_white
+ansi_8: ansi_bright_black
+ansi_9: ansi_bright_red
+ansi_a: ansi_bright_green
+ansi_b: ansi_bright_yellow
+ansi_c: ansi_bright_blue
+ansi_d: ansi_bright_magenta
+ansi_e: ansi_bright_cyan
+ansi_f: ansi_bright_white
 
 # by definition
 $symbol: c1 # highlight operator and special characters.
@@ -75,6 +80,8 @@ line_number_m: foreground_ss
 line_number_b: background_ss
 $quote: secondary # for displaying quotes in a document or ui context
 fold_b: background_ss
+nontext: foreground
+nontext_s: foreground_s
 
 # not in UI, only in syntax highlighting
 static: primary
