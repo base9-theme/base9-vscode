@@ -1,6 +1,6 @@
 import Color = require('color');
 import * as vscode from 'vscode';
-import { getNamedColors, getTemplateVariable, render } from './base9';
+import { getNamedColors, render } from 'base9-core';
 import * as fs from 'fs';
 import * as path from 'path';
 import _ from 'lodash';
@@ -9,7 +9,7 @@ import yaml from 'yaml';
 const PALETTE = 'base9.palette';
 const themeFile: string = path.resolve(__dirname, '../themes/base9.json');
 const templateFile: string = path.resolve(__dirname, '../src/base9.mustache.yml');
-const semanticFile: string = path.resolve(__dirname, '../src/semantic.yml');
+// const semanticFile: string = path.resolve(__dirname, '../src/semantic.yml');
 
 
 
@@ -55,11 +55,9 @@ async function generateTheme(palette?: string): Promise<void> {
 	}
 
 	const template = fs.readFileSync(templateFile, {encoding: 'utf8'});
-	const semantic = fs.readFileSync(semanticFile, {encoding: 'utf8'});
 
 	const cs = _.map(palette.split("-"), c => Color("#"+c));
-	const semanticObj = yaml.parse(semantic) as { [k: string]: string };
-	const outputYaml = render(template, cs, semanticObj);
+	const outputYaml = render(template, cs);
 	const output = JSON.stringify(yaml.parse(outputYaml), undefined, "  ");
 
 	fs.writeFileSync(themeFile, output);

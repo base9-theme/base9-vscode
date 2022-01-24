@@ -1,38 +1,35 @@
-# base9-vscode README
+# base9-vscode
 
-## asdf
+Base8 Color theme for vscode.
 
-Change activation event.
-*aaa*
+## How to use
 
-
-
-```javascript
-a=1
-const b = {
-  ss: 1
-};
-function f1(x) {
-
-}
-```
+* Set color theme to base9.
+* To change color, go to `base9.palette` setting.
+* For more info on how to pick colors, go to
+[base9 website](https://base9-theme.github.io/about) or any color picker
+website and paste in 9 colors in correct format.
 
 ## Contribute
 
-### `themes/base9.mustache.json`:
+The most important file is `src/base9.mustache.yml` which is a base9 template
+for vscode color theme file.
 
-Add comments at the end of a line to:
-- explain why this color
-- explain by default what it will be
+Go to https://base9-theme.github.io/about for more info on how base9 template
+works.
 
-Do not remove lines with null value. It means it's been carefully thought of and left null intentionally.
+Go to https://code.visualstudio.com/api/references/theme-color for more info on
+what each property does.
 
-Lines with todo values being commented out means it's not reviewed yet.
+If a value is commented out, it means I don't know what it's used for, or didn't
+have time to work on it yet. It's what I most need from contributers the most.
 
-### `src/semantic.yaml`:
-Add values that are:
-- Used very often
-- Different people potentially has strong preference on
+The file should include all possible keys supported by vscode. If a value is
+missing, please add them.
+
+Feel free to add documentation on how a value works if it's not obvious.
+
+All `null` values should have document on what it's default or why it's `null`.
 
 ### Todos
 Editor related:
