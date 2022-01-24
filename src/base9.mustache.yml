@@ -192,7 +192,7 @@ colors:
   # sideBySideEditor.verticalBorder: "#{{todo60.o.hex}}"
 
   # Editor colors
-  editor.background: "#{{xxx.o.hex}}"
+  editor.background: "#{{background.o.hex}}"
   editor.foreground: "#{{foreground.o.hex}}"
   editorLineNumber.foreground: "#{{line_number.m.hex}}"
   editorLineNumber.activeForeground: "#{{line_number.o.hex}}"
