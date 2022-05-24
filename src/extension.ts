@@ -1,6 +1,6 @@
 import Color = require('color');
 import * as vscode from 'vscode';
-import { getNamedColors, render } from 'base9-core';
+import { fromPaletteString, render } from 'base9-core';
 import * as fs from 'fs';
 import * as path from 'path';
 import _ from 'lodash';
@@ -9,6 +9,7 @@ import yaml from 'yaml';
 const PALETTE = 'base9.palette';
 const themeFile: string = path.resolve(__dirname, '../themes/base9.json');
 const templateFile: string = path.resolve(__dirname, '../src/base9.mustache.yml');
+
 // const semanticFile: string = path.resolve(__dirname, '../src/semantic.yml');
 
 
@@ -16,10 +17,10 @@ const templateFile: string = path.resolve(__dirname, '../src/base9.mustache.yml'
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	// fs.watchFile(templateFile, {interval: 800}, (e, n) => {
-	// 	console.log("template changed");
-	// 	generateTheme();
-	// });
+	fs.watchFile(templateFile, {interval: 800}, (e, n) => {
+		console.log("template changed");
+		generateTheme();
+	});
 	// fs.watchFile(semanticFile, {interval: 800}, (e, n) => {
 	// 	console.log("semantic changed");
 	// 	generateTheme();
@@ -27,11 +28,11 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	// context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
-	// 	if (e.affectsConfiguration(PALETTE)) {
-	// 		generateTheme();
-	// 	}
-	// }));
+	context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
+		if (e.affectsConfiguration(PALETTE)) {
+			generateTheme();
+		}
+	}));
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
@@ -56,7 +57,7 @@ async function generateTheme(palette?: string): Promise<void> {
 
 	const template = fs.readFileSync(templateFile, {encoding: 'utf8'});
 
-	const cs = _.map(palette.split("-"), c => Color("#"+c));
+	const cs = fromPaletteString(palette)!;
 	const outputYaml = render(template, cs);
 	const output = JSON.stringify(yaml.parse(outputYaml), undefined, "  ");
 
