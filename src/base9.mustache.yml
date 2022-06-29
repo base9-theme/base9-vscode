@@ -1,3 +1,4 @@
+{{#hex}}
 $schema: vscode://schemas/color-theme
 name: base9
 author: Forrest Li
@@ -7,277 +8,277 @@ semanticClass: theme.base9
 semanticHighlighting: true
 colors:
   # Contrast colors
-  # contrastActiveBorder: "#{{todo1.p100.hex}}"
-  # contrastBorder: "#{{todo2.p100.hex}}"
+  # contrastActiveBorder: "#{{todo1.p100}}"
+  # contrastBorder: "#{{todo2.p100}}"
 
   # Base colors
-  focusBorder: "#{{primary.p50.hex}}" #  to be different from input border
-  foreground: "#{{foreground.p100.hex}}"
+  focusBorder: "#{{primary.p75}}" #  to be different from input border
+  foreground: "#{{foreground.p100}}"
   widget.shadow: null # no shadow
-  # selection.background: "#{{selection.background.hex}}" #  when selecting text
-  selection.background: "#{{selection.background.hex}}" #TODO
-  descriptionForeground: "#{{primary.p100.hex}}"
-  errorForeground: "#{{error.p100.hex}}"
-  icon.foreground: "#{{foreground.p100.hex}}"
-  sash.hoverBorder: "#{{separator.normal.hex}}"
+  selection.background: "#{{selection.p25}}"
+  descriptionForeground: "#{{primary.p100}}"
+  errorForeground: "#{{error.p100}}"
+  icon.foreground: "#{{foreground.p100}}"
+  sash.hoverBorder: "#{{divider.p25}}"
 
   # Window border
-  # window.activeBorder: "#{{todo5.p100.hex}}"
-  # window.inactiveBorder: "#{{todo6.p100.hex}}"
+  # window.activeBorder: "#{{todo5.p100}}"
+  # window.inactiveBorder: "#{{todo6.p100}}"
 
   # Text colors
-  # textBlockQuote.background: "#{{todo7.p100.hex}}"
-  # textBlockQuote.border: "#{{todo8.p100.hex}}"
-  textCodeBlock.background: "#{{foreground.p25.hex}}"
-  textLink.activeForeground: "#{{primary.p100.hex}}"
-  textLink.foreground: "#{{primary.p75.hex}}"
-  textPreformat.foreground: "#{{quote.p100.hex}}"
-  # textSeparator.foreground: "#{{todo10.p100.hex}}"
+  # textBlockQuote.background: "#{{todo7.p100}}"
+  # textBlockQuote.border: "#{{todo8.p100}}"
+  textCodeBlock.background: "#{{foreground.p25}}"
+  textLink.activeForeground: "#{{primary.p100}}"
+  textLink.foreground: "#{{primary.p75}}"
+  textPreformat.foreground: "#{{quote.p100}}"
+  # textSeparator.foreground: "#{{todo10.p100}}"
 
   # Action colors
-  toolbar.hoverBackground: "#{{foreground.p25.hex}}"
+  toolbar.hoverBackground: "#{{foreground.p25}}"
   toolbar.hoverOutline: null
-  # toolbar.activeBackground: "#{{todo11.p100.hex}}"
+  # toolbar.activeBackground: "#{{todo11.p100}}"
 
   # Button control
-  button.background: "#{{primary.p75.hex}}"
-  button.foreground: "#{{background.hex}}"
+  button.background: "#{{primary.p75}}"
+  button.foreground: "#{{background}}"
   button.border: null # no border
-  button.hoverBackground: "#{{primary.p100.hex}}"
-  button.secondaryBackground: "#{{secondary.p75.hex}}"
-  button.secondaryForeground: "#{{background.hex}}"
-  button.secondaryHoverBackground: "#{{secondary.p100.hex}}"
+  button.hoverBackground: "#{{primary.p100}}"
+  button.secondaryBackground: "#{{secondary.p75}}"
+  button.secondaryForeground: "#{{background}}"
+  button.secondaryHoverBackground: "#{{secondary.p100}}"
   checkbox.background: null
   checkbox.foreground: null
   checkbox.border: null
 
   # Dropdown control
-  dropdown.background: "#{{foreground.p10.hex}}"
+  dropdown.background: "#{{foreground.p10}}"
   dropdown.listBackground: null
-  dropdown.border: "#{{primary.p75.hex}}"
-  dropdown.foreground: "#{{foreground.p100.hex}}"
+  dropdown.border: "#{{primary.p50}}"
+  dropdown.foreground: "#{{foreground.p100}}"
 
   # Input control
-  input.background: "#{{background.hex}}"
-  input.foreground: "#{{foreground.p100.hex}}"
-  input.border: "#{{primary.p75.hex}}"
-  input.placeholderForeground: "#{{foreground.p75.hex}}"
-  inputOption.activeBackground: "#{{primary.p75.hex}}"
+  input.background: "#{{background}}"
+  input.foreground: "#{{foreground.p100}}"
+  input.border: "#{{primary.p50}}"
+  input.placeholderForeground: "#{{foreground.p75}}"
+  inputOption.activeBackground: "#{{primary.p75}}"
   inputOption.activeBorder: null
-  inputOption.activeForeground: "#{{background.hex}}"
-  inputValidation.errorBackground: "#{{error.p25.hex}}"
+  inputOption.activeForeground: "#{{background}}"
+  inputValidation.errorBackground: "#{{error.p25}}"
   inputValidation.errorForeground: null
-  inputValidation.errorBorder: "#{{error.p100.hex}}"
-  inputValidation.infoBackground: "#{{info.p25.hex}}" # not tested
+  inputValidation.errorBorder: "#{{error.p75}}"
+  inputValidation.infoBackground: "#{{info.p25}}" # not tested
   inputValidation.infoForeground: null # not tested
-  inputValidation.infoBorder: "#{{info.p100.hex}}" # not tested
-  inputValidation.warningBackground: "#{{warning.p25.hex}}" # not tested
+  inputValidation.infoBorder: "#{{info.p75}}" # not tested
+  inputValidation.warningBackground: "#{{warning.p25}}" # not tested
   inputValidation.warningForeground: null # not tested
-  inputValidation.warningBorder: "#{{warning.p100.hex}}" # not tested
+  inputValidation.warningBorder: "#{{warning.p75}}" # not tested
 
   # Scrollbar control
   scrollbar.shadow: null
-  scrollbarSlider.activeBackground: "#{{scroll.p25.hex}}"
-  scrollbarSlider.background: "#{{scroll.p25.hex}}"
-  scrollbarSlider.hoverBackground: "#{{scroll.p75.hex}}"
+  scrollbarSlider.activeBackground: "#{{scroll.p25}}"
+  scrollbarSlider.background: "#{{scroll.p25}}"
+  scrollbarSlider.hoverBackground: "#{{scroll.p50}}"
 
   # Badge
-  badge.foreground: "#{{background.hex}}"
-  badge.background: "#{{secondary.p100.hex}}"
+  badge.foreground: "#{{background}}"
+  badge.background: "#{{secondary.p100}}"
 
   # Progress bar
-  progressBar.background: "#{{secondary.p100.hex}}"
+  progressBar.background: "#{{secondary.p100}}"
 
   # Lists and trees
-  list.activeSelectionBackground: "#{{primary.p25.hex}}"
-  list.activeSelectionForeground: "#{{foreground.p100.hex}}" # If null, it will be absolute white
+  list.activeSelectionBackground: "#{{primary.p25}}"
+  list.activeSelectionForeground: "#{{foreground.p100}}" # If null, it will be absolute white
   list.activeSelectionIconForeground: null
-  list.dropBackground: "#{{drag.background.hex}}"
+  list.dropBackground: "#{{divider.p25}}"
   list.focusBackground: null # do not highlight. we have focus border
   list.focusForeground: null # no foreground change
-  list.focusHighlightForeground: "#{{highlight.p100.hex}}"
+  list.focusHighlightForeground: "#{{highlight.p100}}"
   list.focusOutline: null # no outline
-  list.highlightForeground: "#{{highlight.p100.hex}}"
-  list.hoverBackground: "#{{foreground.p25.hex}}"
+  list.highlightForeground: "#{{highlight.p100}}"
+  list.hoverBackground: "#{{foreground.p25}}"
   list.hoverForeground: null # no foreground change
-  list.inactiveSelectionBackground: "#{{foreground.p25.hex}}"
+  list.inactiveSelectionBackground: "#{{foreground.p25}}"
   list.inactiveSelectionForeground: null
   list.inactiveSelectionIconForeground: null
   list.inactiveFocusBackground: null # do not highlight
   list.inactiveFocusOutline: null
-  # list.invalidItemForeground: "#{{todo24.p100.hex}}"
-  list.errorForeground: "#{{error.p100.hex}}"
-  list.warningForeground: "#{{warning.p100.hex}}"
-  # listFilterWidget.background: "#{{todo26.p100.hex}}"
-  # listFilterWidget.outline: "#{{todo27.p100.hex}}"
-  # listFilterWidget.noMatchesOutline: "#{{todo28.p100.hex}}"
-  # list.filterMatchBackground: "#{{todo29.p100.hex}}"
-  # list.filterMatchBorder: "#{{todo30.p100.hex}}"
-  # list.deemphasizedForeground: "#{{todo31.p100.hex}}"
-  tree.indentGuidesStroke: "#{{foreground.p75.hex}}"
-  tree.tableColumnsBorder: "#{{separator.normal.hex}}"
+  # list.invalidItemForeground: "#{{todo24.p100}}"
+  list.errorForeground: "#{{error.p100}}"
+  list.warningForeground: "#{{warning.p100}}"
+  # listFilterWidget.background: "#{{todo26.p100}}"
+  # listFilterWidget.outline: "#{{todo27.p100}}"
+  # listFilterWidget.noMatchesOutline: "#{{todo28.p100}}"
+  # list.filterMatchBackground: "#{{todo29.p100}}"
+  # list.filterMatchBorder: "#{{todo30.p100}}"
+  # list.deemphasizedForeground: "#{{todo31.p100}}"
+  tree.indentGuidesStroke: "#{{foreground.p75}}"
+  tree.tableColumnsBorder: "#{{divider.p25}}"
 
   # Activity Bar
-  activityBar.background: "#{{background.hex}}"
-  activityBar.dropBorder: "#{{primary.p100.hex}}"
-  activityBar.foreground: "#{{foreground.p100.hex}}"
-  activityBar.inactiveForeground: "#{{foreground.p75.hex}}"
+  activityBar.background: "#{{background}}"
+  activityBar.dropBorder: "#{{primary.p75}}"
+  activityBar.foreground: "#{{foreground.p100}}"
+  activityBar.inactiveForeground: "#{{foreground.p75}}"
   activityBar.border: null
-  activityBarBadge.background: "#{{secondary.p100.hex}}"
-  activityBarBadge.foreground: "#{{background.hex}}"
-  activityBar.activeBorder: "#{{primary.p100.hex}}"
-  activityBar.activeBackground: "#{{primary.p25.hex}}"
+  activityBarBadge.background: "#{{secondary.p100}}"
+  activityBarBadge.foreground: "#{{background}}"
+  activityBar.activeBorder: "#{{primary.p50}}"
+  activityBar.activeBackground: "#{{primary.p25}}"
   activityBar.activeFocusBorder: null
 
   # Side Bar
-  sideBar.background: "#{{foreground.p10.hex}}"
+  sideBar.background: "#{{foreground.p10}}"
   sideBar.foreground: null
   sideBar.border: null
-  sideBar.dropBackground: "#{{drag.background.hex}}"
-  sideBarTitle.foreground: "#{{foreground.p100.hex}}"
-  sideBarSectionHeader.background: "#{{background.hex}}"
+  sideBar.dropBackground: "#{{shadow.p25}}"
+  sideBarTitle.foreground: "#{{foreground.p100}}"
+  sideBarSectionHeader.background: "#{{background}}"
   sideBarSectionHeader.foreground: null
-  sideBarSectionHeader.border: "#{{separator.normal.hex}}"
+  sideBarSectionHeader.border: "#{{divider.p25}}"
 
   # Minimap
   minimap.findMatchHighlight: null
-  minimap.selectionHighlight: "#{{selection.background.hex}}"
-  minimap.errorHighlight: "#{{error.p25.hex}}"
-  minimap.warningHighlight: "#{{warning.p25.hex}}"
+  minimap.selectionHighlight: "#{{selection.background}}"
+  minimap.errorHighlight: "#{{error.p25}}"
+  minimap.warningHighlight: "#{{warning.p25}}"
   minimap.background: null # default to editor.background
-  minimap.selectionOccurrenceHighlight: "#{{highlight.p25.hex}}"
+  minimap.selectionOccurrenceHighlight: "#{{highlight.p25}}"
   minimap.foregroundOpacity: null # %100
-  minimap.unicodeHighlight: "#{{nontext.p100.hex}}" # not tested
+  minimap.unicodeHighlight: "#{{nontext.p100}}" # not tested
   minimapSlider.background: null # default to scrollbarSlider.background
   minimapSlider.hoverBackground: null # default to scrollbarSlider.hoverBackground
   minimapSlider.activeBackground: null # default to scrollbarSlider.activeBackground
-  minimapGutter.addedBackground: "#{{green.p75.hex}}"
-  minimapGutter.modifiedBackground: "#{{warning.p75.hex}}"
-  minimapGutter.deletedBackground: "#{{error.p75.hex}}"
+  minimapGutter.addedBackground: "#{{green.p75}}"
+  minimapGutter.modifiedBackground: "#{{warning.p75}}"
+  minimapGutter.deletedBackground: "#{{error.p75}}"
 
   # editor Groups & Tabs
-  editorGroup.border: "#{{separator.normal.hex}}"
-  editorGroup.dropBackground: "#{{drag.background.hex}}"
+  editorGroup.border: "#{{divider.p25}}"
+  editorGroup.dropBackground: "#{{foreground.p25}}"
   editorGroupHeader.noTabsBackground: null # editorGroupHeader.tabsBackground
-  editorGroupHeader.tabsBackground: "#{{foreground.p10.hex}}"
+  editorGroupHeader.tabsBackground: "#{{foreground.p10}}"
   editorGroupHeader.tabsBorder: null
   editorGroupHeader.border: null
-  # editorGroup.emptyBackground: "#{{todo49.p100.hex}}"
-  # editorGroup.focusedEmptyBorder: "#{{todo50.p100.hex}}"
-  tab.activeBackground: "#{{background.hex}}"
+  # editorGroup.emptyBackground: "#{{todo49.p100}}"
+  # editorGroup.focusedEmptyBorder: "#{{todo50.p100}}"
+  tab.activeBackground: "#{{background}}"
   tab.unfocusedActiveBackground: null # default to tab.activeBackground
-  tab.activeForeground: "#{{foreground.p100.hex}}"
+  tab.activeForeground: "#{{foreground.p100}}"
   tab.border: null
   tab.activeBorder: null
   tab.unfocusedActiveBorder: null
   tab.activeBorderTop: null
   tab.unfocusedActiveBorderTop: null
-  tab.lastPinnedBorder: "#{{foreground.p25.hex}}"
-  tab.inactiveBackground: "#{{foreground.p10.hex}}"
+  tab.lastPinnedBorder: "#{{foreground.p25}}"
+  tab.inactiveBackground: "#{{foreground.p10}}"
   tab.unfocusedInactiveBackground: null
-  tab.inactiveForeground: null # default to
-  tab.unfocusedActiveForeground: "#{{foreground.p100.hex}}"
-  tab.unfocusedInactiveForeground: "#{{foreground.p100.hex}}"
+  tab.inactiveForeground: null # default to TODO
+  tab.unfocusedActiveForeground: "#{{foreground.p100}}"
+  tab.unfocusedInactiveForeground: "#{{foreground.p100}}"
   tab.hoverBackground: null
   tab.unfocusedHoverBackground: null
   tab.hoverForeground: null
   tab.unfocusedHoverForeground: null
   tab.hoverBorder: null
   tab.unfocusedHoverBorder: null
-  # tab.activeModifiedBorder: "#{{todo54.p100.hex}}"
-  # tab.inactiveModifiedBorder: "#{{todo55.p100.hex}}"
-  # tab.unfocusedActiveModifiedBorder: "#{{todo56.p100.hex}}"
-  # tab.unfocusedInactiveModifiedBorder: "#{{todo57.p100.hex}}"
-  # editorPane.background: "#{{todo58.p100.hex}}"
-  # sideBySideEditor.horizontalBorder: "#{{todo59.p100.hex}}"
-  # sideBySideEditor.verticalBorder: "#{{todo60.p100.hex}}"
+  # tab.activeModifiedBorder: "#{{todo54.p100}}"
+  # tab.inactiveModifiedBorder: "#{{todo55.p100}}"
+  # tab.unfocusedActiveModifiedBorder: "#{{todo56.p100}}"
+  # tab.unfocusedInactiveModifiedBorder: "#{{todo57.p100}}"
+  # editorPane.background: "#{{todo58.p100}}"
+  # sideBySideEditor.horizontalBorder: "#{{todo59.p100}}"
+  # sideBySideEditor.verticalBorder: "#{{todo60.p100}}"
 
   # Editor colors
-  editor.background: "#{{background.hex}}"
-  editor.foreground: "#{{foreground.p100.hex}}"
-  editorLineNumber.foreground: "#{{line_number.others.hex}}"
-  editorLineNumber.activeForeground: "#{{line_number.current.hex}}"
-  editorCursor.background: "#{{cursor.foreground.hex}}"
-  editorCursor.foreground: "#{{cursor.background.hex}}"
-  editor.selectionBackground: "#{{selection.background.hex}}"
+  editor.background: "#{{background}}"
+  editor.foreground: "#{{foreground.p100}}"
+  editorLineNumber.foreground: "#{{line_number.p50}}"
+  editorLineNumber.activeForeground: "#{{line_number.p75}}"
+  editorCursor.background: "#{{background}}"
+  editorCursor.foreground: "#{{cursor.p100}}"
+  editor.selectionBackground: "#{{selection.p25}}"
   editor.selectionForeground: null
   editor.inactiveSelectionBackground: null
-  editor.selectionHighlightBackground: "#{{highlight.p25.hex}}"
+  editor.selectionHighlightBackground: "#{{highlight.p25}}"
   editor.selectionHighlightBorder: null
-  editor.wordHighlightBackground: "#{{highlight.p25.hex}}"
+  editor.wordHighlightBackground: "#{{highlight.p25}}"
   editor.wordHighlightBorder: null
-  editor.wordHighlightStrongBackground: "#{{highlight.p25.hex}}"
-  editor.wordHighlightStrongBorder: "#{{highlight.p100.hex}}"
-  editor.findMatchBackground: "#{{match.p25.hex}}"
-  editor.findMatchHighlightBackground: "#{{match.p25.hex}}" # default to editor.findMatchBackground
-  # editor.findRangeHighlightBackground: "#{{todo78.p100.hex}}"
-  editor.findMatchBorder: "#{{match.p75.hex}}"
-  editor.findMatchHighlightBorder: null
-  editor.findRangeHighlightBorder: "#{{green.p100.hex}}"
-  # searchEditor.findMatchBackground: "#{{todo82.p100.hex}}"
-  # searchEditor.findMatchBorder: "#{{todo83.p100.hex}}"
-  # searchEditor.textInputBorder: "#{{todo84.p100.hex}}"
+  editor.wordHighlightStrongBackground: "#{{highlight.p25}}"
+  editor.wordHighlightStrongBorder: "#{{highlight.p75}}"
+  editor.findMatchBackground: "#{{match.p25}}"
+  # editor.findMatchHighlightBackground: "#{{match.p25}}" # default to editor.findMatchBackground
+  # editor.findRangeHighlightBackground: "#{{todo78.p100}}"
+  editor.findMatchBorder: "#{{match.p75}}"
+  # editor.findMatchHighlightBorder: "#{match.p75}}"
+  editor.findRangeHighlightBorder: "#{{green.p75}}" #TODO
+  # searchEditor.findMatchBackground: "#{{todo82.p100}}"
+  searchEditor.findMatchBorder: "#{{todo83.p100}}"
+  # searchEditor.textInputBorder: "#{{todo84.p100}}"
   editor.hoverHighlightBackground: null
-  editor.lineHighlightBackground: "#{{foreground.p10.hex}}"
+  editor.lineHighlightBackground: "#{{foreground.p10}}"
   editor.lineHighlightBorder: null
-  editorUnicodeHighlight.border: "#{{nontext.p100.hex}}"
-  editorLink.activeForeground: "#{{link.p100.hex}}"
-  editor.rangeHighlightBackground: null # default to editor.findMtchBackground
+  editorUnicodeHighlight.border: "#{{nontext.p75}}"
+  editorLink.activeForeground: "#{{link.p100}}"
+  # editor.rangeHighlightBackground: null # default to editor.findMtchBackground
+  # editor.rangeHighlightBackground: null # default to editor.findMtchBackground
   editor.rangeHighlightBorder: null # default to editor.findMatchBorder
-  # editor.symbolHighlightBackground: "#{{todo92.p100.hex}}"
-  # editor.symbolHighlightBorder: "#{{todo93.p100.hex}}"
-  editorWhitespace.foreground: "#{{foreground.p25.hex}}"
-  editorIndentGuide.background: "#{{foreground.p25.hex}}"
-  editorIndentGuide.activeBackground: "#{{foreground.p50.hex}}"
-  # editorInlayHint.background: "#{{todo99.p100.hex}}"
-  # editorInlayHint.foreground: "#{{todo100.p100.hex}}"
-  # editorInlayHint.typeForeground: "#{{todo101.p100.hex}}"
-  # editorInlayHint.typeBackground: "#{{todo102.p100.hex}}"
-  # editorInlayHint.parameterForeground: "#{{todo103.p100.hex}}"
-  # editorInlayHint.parameterBackground: "#{{todo104.p100.hex}}"
-  editorRuler.foreground: "#{{foreground.p25.hex}}"
-  # editor.linkedEditingBackground: "#{{todo107.p100.hex}}"
-  # editorCodeLens.foreground: "#{{todo108.p100.hex}}"
-  editorLightBulb.foreground: "#{{warning.p100.hex}}"
-  editorLightBulbAutoFix.foreground: "#{{function.p100.hex}}"
-  editorBracketMatch.background: "#{{highlight.p25.hex}}"
-  editorBracketMatch.border: "#{{highlight.p100.hex}}"
-  editorBracketHighlight.foreground1: "#{{c2.p100.hex}}"
-  editorBracketHighlight.foreground2: "#{{c3.p100.hex}}"
-  editorBracketHighlight.foreground3: "#{{c4.p100.hex}}"
-  editorBracketHighlight.foreground4: "#{{c5.p100.hex}}"
-  editorBracketHighlight.foreground5: "#{{c6.p100.hex}}"
-  editorBracketHighlight.foreground6: "#{{c7.p100.hex}}"
-  # editorBracketHighlight.unexpectedBracket.foreground: "#{{red.p125.hex}}"
-  # editorBracketPairGuide.activeBackground1: "#{{todo120.p100.hex}}"
-  # editorBracketPairGuide.activeBackground2: "#{{todo121.p100.hex}}"
-  # editorBracketPairGuide.activeBackground3: "#{{todo122.p100.hex}}"
-  # editorBracketPairGuide.activeBackground4: "#{{todo123.p100.hex}}"
-  # editorBracketPairGuide.activeBackground5: "#{{todo124.p100.hex}}"
-  # editorBracketPairGuide.activeBackground6: "#{{todo125.p100.hex}}"
-  # editorBracketPairGuide.background1: "#{{todo126.p100.hex}}"
-  # editorBracketPairGuide.background2: "#{{todo127.p100.hex}}"
-  # editorBracketPairGuide.background3: "#{{todo128.p100.hex}}"
-  # editorBracketPairGuide.background4: "#{{todo129.p100.hex}}"
-  # editorBracketPairGuide.background5: "#{{todo130.p100.hex}}"
-  # editorBracketPairGuide.background6: "#{{todo131.p100.hex}}"
-  # editorBracketPairGuide.background1: "#{{todo132.p100.hex}}"
-  editor.foldBackground: "#{{fold.background.hex}}"
+  # editor.symbolHighlightBackground: "#{{todo92.p100}}"
+  # editor.symbolHighlightBorder: "#{{todo93.p100}}"
+  editorWhitespace.foreground: "#{{foreground.p25}}"
+  editorIndentGuide.background: "#{{foreground.p25}}"
+  editorIndentGuide.activeBackground: "#{{foreground.p50}}"
+  # editorInlayHint.background: "#{{todo99.p100}}"
+  # editorInlayHint.foreground: "#{{todo100.p100}}"
+  # editorInlayHint.typeForeground: "#{{todo101.p100}}"
+  # editorInlayHint.typeBackground: "#{{todo102.p100}}"
+  # editorInlayHint.parameterForeground: "#{{todo103.p100}}"
+  # editorInlayHint.parameterBackground: "#{{todo104.p100}}"
+  editorRuler.foreground: "#{{foreground.p25}}"
+  # editor.linkedEditingBackground: "#{{todo107.p100}}"
+  # editorCodeLens.foreground: "#{{todo108.p100}}"
+  editorLightBulb.foreground: "#{{warning.p100}}"
+  editorLightBulbAutoFix.foreground: "#{{function.p100}}"
+  editorBracketMatch.background: "#{{highlight.p25}}"
+  editorBracketMatch.border: "#{{highlight.p75}}"
+  editorBracketHighlight.foreground1: "#{{c2.p100}}"
+  editorBracketHighlight.foreground2: "#{{c3.p100}}"
+  editorBracketHighlight.foreground3: "#{{c4.p100}}"
+  editorBracketHighlight.foreground4: "#{{c5.p100}}"
+  editorBracketHighlight.foreground5: "#{{c6.p100}}"
+  editorBracketHighlight.foreground6: "#{{c7.p100}}"
+  # editorBracketHighlight.unexpectedBracket.foreground: "#{{red.p125}}"
+  # editorBracketPairGuide.activeBackground1: "#{{todo120.p100}}"
+  # editorBracketPairGuide.activeBackground2: "#{{todo121.p100}}"
+  # editorBracketPairGuide.activeBackground3: "#{{todo122.p100}}"
+  # editorBracketPairGuide.activeBackground4: "#{{todo123.p100}}"
+  # editorBracketPairGuide.activeBackground5: "#{{todo124.p100}}"
+  # editorBracketPairGuide.activeBackground6: "#{{todo125.p100}}"
+  # editorBracketPairGuide.background1: "#{{todo126.p100}}"
+  # editorBracketPairGuide.background2: "#{{todo127.p100}}"
+  # editorBracketPairGuide.background3: "#{{todo128.p100}}"
+  # editorBracketPairGuide.background4: "#{{todo129.p100}}"
+  # editorBracketPairGuide.background5: "#{{todo130.p100}}"
+  # editorBracketPairGuide.background6: "#{{todo131.p100}}"
+  # editorBracketPairGuide.background1: "#{{todo132.p100}}"
+  editor.foldBackground: "#{{fold.p10}}"
   editorOverviewRuler.background: null
-  editorOverviewRuler.border: "#{{separator.normal.hex}}"
-  editorOverviewRuler.findMatchForeground: "#{{match.p75.hex}}"
-  editorOverviewRuler.rangeHighlightForeground: "#{{match.p75.hex}}"
-  editorOverviewRuler.selectionHighlightForeground: "#{{highlight.p75.hex}}"
-  editorOverviewRuler.wordHighlightForeground: "#{{highlight.p75.hex}}"
-  editorOverviewRuler.wordHighlightStrongForeground: "#{{highlight.p100.hex}}"
+  editorOverviewRuler.border: "#{{divider.p25}}"
+  editorOverviewRuler.findMatchForeground: "#{{match.p75}}"
+  editorOverviewRuler.rangeHighlightForeground: "#{{match.p75}}"
+  editorOverviewRuler.selectionHighlightForeground: "#{{highlight.p75}}"
+  editorOverviewRuler.wordHighlightForeground: "#{{highlight.p75}}"
+  editorOverviewRuler.wordHighlightStrongForeground: "#{{highlight.p100}}"
   editorOverviewRuler.modifiedForeground: null
   editorOverviewRuler.addedForeground: null
   editorOverviewRuler.deletedForeground: null
-  editorOverviewRuler.errorForeground: "#{{error.p75.hex}}"
-  editorOverviewRuler.warningForeground: "#{{warning.p75.hex}}"
-  editorOverviewRuler.infoForeground: "#{{info.p75.hex}}"
-  editorOverviewRuler.bracketMatchForeground: "#{{highlight.p25.hex}}"
-  editorOverviewRuler.unicodeForeground: "#{{nontext.p75.hex}}"
+  editorOverviewRuler.errorForeground: "#{{error.p75}}"
+  editorOverviewRuler.warningForeground: "#{{warning.p75}}"
+  editorOverviewRuler.infoForeground: "#{{info.p75}}"
+  editorOverviewRuler.bracketMatchForeground: "#{{highlight.p25}}"
+  editorOverviewRuler.unicodeForeground: "#{{escaping.p75}}"
   editorError.foreground: null # default to error.forground
   editorError.border: null # no border
   editorError.background: # no background
@@ -287,397 +288,397 @@ colors:
   editorInfo.foreground: null
   editorInfo.border: null
   editorInfo.background: null
-  # editorHint.foreground: "#{{todo158.p100.hex}}"
-  # editorHint.border: "#{{todo159.p100.hex}}"
-  # problemsErrorIcon.foreground: "#{{todo160.p100.hex}}"
-  # problemsWarningIcon.foreground: "#{{todo161.p100.hex}}"
-  # problemsInfoIcon.foreground: "#{{todo162.p100.hex}}"
-  # editorUnnecessaryCode.border: "#{{todo163.p100.hex}}"
-  # editorUnnecessaryCode.opacity: "#{{todo164.p100.hex}}"
+  # editorHint.foreground: "#{{todo158.p100}}"
+  # editorHint.border: "#{{todo159.p100}}"
+  # problemsErrorIcon.foreground: "#{{todo160.p100}}"
+  # problemsWarningIcon.foreground: "#{{todo161.p100}}"
+  # problemsInfoIcon.foreground: "#{{todo162.p100}}"
+  # editorUnnecessaryCode.border: "#{{todo163.p100}}"
+  # editorUnnecessaryCode.opacity: "#{{todo164.p100}}"
   # \"
-  # "\"editorUnnecessaryCode.border\: "#{{todo165.p100.hex}}"
+  # "\"editorUnnecessaryCode.border\: "#{{todo165.p100}}"
   editorGutter.background: null # default to editor.background
-  editorGutter.modifiedBackground: "#{{warning.p100.hex}}"
-  editorGutter.addedBackground: "#{{good.p100.hex}}"
-  editorGutter.deletedBackground: "#{{error.p100.hex}}"
-  # editorGutter.commentRangeForeground: "#{{todo170.p100.hex}}"
-  editorGutter.foldingControlForeground: "#{{secondary.p100.hex}}"
+  editorGutter.modifiedBackground: "#{{warning.p100}}"
+  editorGutter.addedBackground: "#{{green.p100}}"
+  editorGutter.deletedBackground: "#{{red.p100}}"
+  # editorGutter.commentRangeForeground: "#{{todo170.p100}}"
+  editorGutter.foldingControlForeground: "#{{secondary.p100}}"
   # Diff editor colors
-  diffEditor.insertedTextBackground: "#{{good.p25.hex}}"
+  diffEditor.insertedTextBackground: "#{{green.p25}}"
   diffEditor.insertedTextBorder: null # do not highlight
-  diffEditor.removedTextBackground: "#{{error.p25.hex}}"
+  diffEditor.removedTextBackground: "#{{red.p25}}"
   diffEditor.removedTextBorder: null # do not highlight
-  diffEditor.border: "#{{separator.normal.hex}}"
-  diffEditor.diagonalFill: "#{{foreground.p25.hex}}"
+  diffEditor.border: "#{{divider.p25}}"
+  diffEditor.diagonalFill: "#{{foreground.p25}}"
   # Editor widget colors
   editorWidget.foreground: null # default to foreground
-  editorWidget.background: "#{{foreground.p10.hex}}"
-  editorWidget.border: "#{{separator.normal.hex}}"
-  # editorWidget.resizeBorder: "#{{todo181.p100.hex}}"
+  editorWidget.background: "#{{foreground.p10}}"
+  editorWidget.border: "#{{divider.p25}}"
+  # editorWidget.resizeBorder: "#{{todo181.p100}}"
   editorSuggestWidget.background: null # default to editorWidget.background
-  editorSuggestWidget.border: "#{{red.p100.hex}}" # TODO
+  editorSuggestWidget.border: "#{{divider.p50}}" # TODO
   editorSuggestWidget.foreground: null
   editorSuggestWidget.focusHighlightForeground: null
   editorSuggestWidget.highlightForeground: null
   editorSuggestWidget.selectedBackground: null
   editorSuggestWidget.selectedForeground: null
   editorSuggestWidget.selectedIconForeground: null
-  # editorSuggestWidgetStatus.foreground: "#{{todo190.p100.hex}}"
+  # editorSuggestWidgetStatus.foreground: "#{{todo190.p100}}"
   editorHoverWidget.foreground: null # default to syntax
   editorHoverWidget.background: null # default to editorWidget.background
   editorHoverWidget.border: null # default to eidtorWidget.border
-  # editorHoverWidget.highlightForeground: "#{{todo194.p100.hex}}"
-  editorHoverWidget.statusBarBackground: "#{{foreground.p10.hex}}"
-  # editorGhostText.border: "#{{todo196.p100.hex}}"
-  # editorGhostText.background: "#{{todo197.p100.hex}}"
-  # editorGhostText.foreground: "#{{todo198.p100.hex}}"
-  # debugExceptionWidget.background: "#{{todo199.p100.hex}}"
-  # debugExceptionWidget.border: "#{{todo200.p100.hex}}"
-  # editorMarkerNavigation.background: "#{{todo201.p100.hex}}"
-  # editorMarkerNavigationError.background: "#{{todo202.p100.hex}}"
-  # editorMarkerNavigationWarning.background: "#{{todo203.p100.hex}}"
-  # editorMarkerNavigationInfo.background: "#{{todo204.p100.hex}}"
-  # editorMarkerNavigationError.headerBackground: "#{{todo205.p100.hex}}"
-  # editorMarkerNavigationWarning.headerBackground: "#{{todo206.p100.hex}}"
-  # editorMarkerNavigationInfo.headerBackground: "#{{todo207.p100.hex}}"
+  # editorHoverWidget.highlightForeground: "#{{todo194.p100}}"
+  editorHoverWidget.statusBarBackground: "#{{foreground.p10}}"
+  # editorGhostText.border: "#{{todo196.p100}}"
+  # editorGhostText.background: "#{{todo197.p100}}"
+  # editorGhostText.foreground: "#{{todo198.p100}}"
+  # debugExceptionWidget.background: "#{{todo199.p100}}"
+  # debugExceptionWidget.border: "#{{todo200.p100}}"
+  # editorMarkerNavigation.background: "#{{todo201.p100}}"
+  # editorMarkerNavigationError.background: "#{{todo202.p100}}"
+  # editorMarkerNavigationWarning.background: "#{{todo203.p100}}"
+  # editorMarkerNavigationInfo.background: "#{{todo204.p100}}"
+  # editorMarkerNavigationError.headerBackground: "#{{todo205.p100}}"
+  # editorMarkerNavigationWarning.headerBackground: "#{{todo206.p100}}"
+  # editorMarkerNavigationInfo.headerBackground: "#{{todo207.p100}}"
 
   # Peek view colors
-  peekView.border: "#{{separator.highlight.hex}}"
-  peekViewEditor.background: "#{{foreground.p10.hex}}"
-  # peekViewEditorGutter.background: "#{{todo210.p100.hex}}"
-  peekViewEditor.matchHighlightBackground: "#{{match.p25.hex}}"
-  peekViewEditor.matchHighlightBorder: "#{{match.p75.hex}}"
-  # peekViewResult.background: "#{{todo213.p100.hex}}"
-  # peekViewResult.fileForeground: "#{{todo214.p100.hex}}"
-  # peekViewResult.lineForeground: "#{{todo215.p100.hex}}"
-  # peekViewResult.matchHighlightBackground: "#{{todo216.p100.hex}}"
-  # peekViewResult.selectionBackground: "#{{todo217.p100.hex}}"
-  # peekViewResult.selectionForeground: "#{{todo218.p100.hex}}"
-  # peekViewTitle.background: "#{{primary.p25.hex}}"
-  # peekViewTitleDescription.foreground: "#{{todo220.p100.hex}}"
-  # peekViewTitleLabel.foreground: "#{{todo221.p100.hex}}"
+  peekView.border: "#{{divider.p50}}"
+  peekViewEditor.background: "#{{foreground.p10}}"
+  # peekViewEditorGutter.background: "#{{todo210.p100}}"
+  peekViewEditor.matchHighlightBackground: "#{{match.p25}}"
+  peekViewEditor.matchHighlightBorder: "#{{match.p75}}"
+  # peekViewResult.background: "#{{todo213.p100}}"
+  # peekViewResult.fileForeground: "#{{todo214.p100}}"
+  # peekViewResult.lineForeground: "#{{todo215.p100}}"
+  # peekViewResult.matchHighlightBackground: "#{{todo216.p100}}"
+  # peekViewResult.selectionBackground: "#{{todo217.p100}}"
+  # peekViewResult.selectionForeground: "#{{todo218.p100}}"
+  # peekViewTitle.background: "#{{primary.p25}}"
+  # peekViewTitleDescription.foreground: "#{{todo220.p100}}"
+  # peekViewTitleLabel.foreground: "#{{todo221.p100}}"
 
   # Merge conflicts colors
-  # merge.currentHeaderBackground: "#{{todo222.p100.hex}}"
-  # merge.currentContentBackground: "#{{todo223.p100.hex}}"
-  # merge.incomingHeaderBackground: "#{{todo224.p100.hex}}"
-  # merge.incomingContentBackground: "#{{todo225.p100.hex}}"
-  # merge.border: "#{{todo226.p100.hex}}"
-  # merge.commonContentBackground: "#{{todo227.p100.hex}}"
-  # merge.commonHeaderBackground: "#{{todo228.p100.hex}}"
-  # editorOverviewRuler.currentContentForeground: "#{{todo229.p100.hex}}"
-  # editorOverviewRuler.incomingContentForeground: "#{{todo230.p100.hex}}"
-  # editorOverviewRuler.commonContentForeground: "#{{todo231.p100.hex}}"
+  # merge.currentHeaderBackground: "#{{todo222.p100}}"
+  # merge.currentContentBackground: "#{{todo223.p100}}"
+  # merge.incomingHeaderBackground: "#{{todo224.p100}}"
+  # merge.incomingContentBackground: "#{{todo225.p100}}"
+  # merge.border: "#{{todo226.p100}}"
+  # merge.commonContentBackground: "#{{todo227.p100}}"
+  # merge.commonHeaderBackground: "#{{todo228.p100}}"
+  # editorOverviewRuler.currentContentForeground: "#{{todo229.p100}}"
+  # editorOverviewRuler.incomingContentForeground: "#{{todo230.p100}}"
+  # editorOverviewRuler.commonContentForeground: "#{{todo231.p100}}"
 
   # Panel colors
   panel.background: null
   panel.border: null
-  panel.dropBorder: "#{{drag.background.hex}}"
-  panelTitle.activeBorder: "#{{separator.highlight.hex}}"
-  panelTitle.activeForeground: "#{{foreground.p100.hex}}"
-  panelTitle.inactiveForeground: "#{{foreground.p75.hex}}"
-  # panelInput.border: "#{{todo238.p100.hex}}"
-  # panelSection.border: "#{{todo239.p100.hex}}"
-  # panelSection.dropBackground: "#{{todo2.p100.hex}}40"
-  # panelSectionHeader.background: "#{{todo241.p100.hex}}"
-  # panelSectionHeader.foreground: "#{{todo242.p100.hex}}"
-  # panelSectionHeader.border: "#{{todo243.p100.hex}}"
+  panel.dropBorder: "#{{drag.background}}"
+  panelTitle.activeBorder: "#{{divider.p50}}"
+  panelTitle.activeForeground: "#{{foreground.p100}}"
+  panelTitle.inactiveForeground: "#{{foreground.p75}}"
+  # panelInput.border: "#{{todo238.p100}}"
+  # panelSection.border: "#{{todo239.p100}}"
+  # panelSection.dropBackground: "#{{todo2.p100}}40"
+  # panelSectionHeader.background: "#{{todo241.p100}}"
+  # panelSectionHeader.foreground: "#{{todo242.p100}}"
+  # panelSectionHeader.border: "#{{todo243.p100}}"
 
   # Status Bar colors
-  statusBar.background: "#{{primary.p25.hex}}"
-  statusBar.foreground: "#{{foreground.p100.hex}}"
+  statusBar.background: "#{{primary.p75}}"
+  statusBar.foreground: "#{{background}}"
   statusBar.border: null
-  statusBar.debuggingBackground: "#{{debug.p25.hex}}" # not tested
+  statusBar.debuggingBackground: "#{{debug.p75}}" # not tested
   statusBar.debuggingForeground: null # not tested
   statusBar.debuggingBorder: null # not tested
-  # statusBar.noFolderForeground: "#{{todo250.p100.hex}}"
-  # statusBar.noFolderBackground: "#{{todo251.p100.hex}}"
-  # statusBar.noFolderBorder: "#{{todo252.p100.hex}}"
-  # statusBarItem.activeBackground: "#{{todo253.p100.hex}}"
-  statusBarItem.hoverBackground: "#{{foreground.p100.hex}}40"
-  # statusBarItem.prominentForeground: "#{{todo255.p100.hex}}"
-  # statusBarItem.prominentBackground: "#{{todo256.p100.hex}}"
-  # statusBarItem.prominentHoverBackground: "#{{todo257.p100.hex}}"
-  statusBarItem.remoteBackground: "#{{secondary.p25.hex}}"
-  statusBarItem.remoteForeground: "#{{foreground.p100.hex}}"
-  statusBarItem.errorBackground: "#{{error.p50.hex}}" # to make it stand out
-  statusBarItem.errorForeground: "#{{foreground.p100.hex}}"
-  statusBarItem.warningBackground: "#{{warning.p50.hex}}" # not tested
-  statusBarItem.warningForeground: "#{{foreground.p100.hex}}" # not tested
+  # statusBar.noFolderForeground: "#{{todo250.p100}}"
+  # statusBar.noFolderBackground: "#{{todo251.p100}}"
+  # statusBar.noFolderBorder: "#{{todo252.p100}}"
+  statusBarItem.activeBackground: "#00000000"
+  statusBarItem.hoverBackground: "#{{foreground.p100}}30"
+  # statusBarItem.prominentForeground: "#{{todo255.p100}}"
+  # statusBarItem.prominentBackground: "#{{todo256.p100}}"
+  # statusBarItem.prominentHoverBackground: "#{{todo257.p100}}"
+  statusBarItem.remoteBackground: "#{{debug.p75}}"
+  statusBarItem.remoteForeground: "#{{background}}"
+  statusBarItem.errorBackground: "#{{error.p100}}" # to make it stand out
+  statusBarItem.errorForeground: "#{{background}}"
+  statusBarItem.warningBackground: "#{{warning.p100}}" # not tested
+  statusBarItem.warningForeground: "#{{background}}" # not tested
 
   # Title Bar colors # TODO
-  # titleBar.activeBackground: "#{{todo264.p100.hex}}"
-  # titleBar.activeForeground: "#{{todo265.p100.hex}}"
-  # titleBar.inactiveBackground: "#{{todo266.p100.hex}}"
-  # titleBar.inactiveForeground: "#{{todo267.p100.hex}}"
-  # titleBar.border: "#{{todo268.p100.hex}}"
+  # titleBar.activeBackground: "#{{todo264.p100}}"
+  # titleBar.activeForeground: "#{{todo265.p100}}"
+  # titleBar.inactiveBackground: "#{{todo266.p100}}"
+  # titleBar.inactiveForeground: "#{{todo267.p100}}"
+  # titleBar.border: "#{{todo268.p100}}"
 
   # Menu Bar colors
-  # menubar.selectionForeground: "#{{todo269.p100.hex}}"
-  # menubar.selectionBackground: "#{{todo270.p100.hex}}"
-  # menubar.selectionBorder: "#{{todo271.p100.hex}}"
-  # menu.foreground: "#{{todo272.p100.hex}}"
-  # menu.background: "#{{todo273.p100.hex}}"
-  # menu.selectionForeground: "#{{todo274.p100.hex}}"
-  # menu.selectionBackground: "#{{todo275.p100.hex}}"
-  # menu.selectionBorder: "#{{todo276.p100.hex}}"
-  # menu.separatorBackground: "#{{todo277.p100.hex}}"
-  # menu.border: "#{{todo278.p100.hex}}"
+  # menubar.selectionForeground: "#{{todo269.p100}}"
+  # menubar.selectionBackground: "#{{todo270.p100}}"
+  # menubar.selectionBorder: "#{{todo271.p100}}"
+  # menu.foreground: "#{{todo272.p100}}"
+  # menu.background: "#{{todo273.p100}}"
+  # menu.selectionForeground: "#{{todo274.p100}}"
+  # menu.selectionBackground: "#{{todo275.p100}}"
+  # menu.selectionBorder: "#{{todo276.p100}}"
+  # menu.separatorBackground: "#{{todo277.p100}}"
+  # menu.border: "#{{todo278.p100}}"
 
   # Notification colors
   notificationCenter.border: null
   notificationCenterHeader.foreground: null
-  notificationCenterHeader.background: "#{{primary.p25.hex}}"
+  notificationCenterHeader.background: "#{{primary.p25}}"
   notificationToast.border: null
   notifications.foreground: null
-  notifications.background: "#{{foreground.p10.hex}}"
+  notifications.background: "#{{foreground.p10}}"
   notifications.border: null
-  notificationLink.foreground: "#{{link.p100.hex}}"
-  notificationsErrorIcon.foreground: "#{{error.p100.hex}}" # not tested
-  notificationsWarningIcon.foreground: "#{{warning.p100.hex}}" # not tested
-  notificationsInfoIcon.foreground: "#{{info.p100.hex}}"
+  notificationLink.foreground: "#{{link.p100}}"
+  notificationsErrorIcon.foreground: "#{{error.p100}}" # not tested
+  notificationsWarningIcon.foreground: "#{{warning.p100}}" # not tested
+  notificationsInfoIcon.foreground: "#{{info.p100}}"
   # Banner colors TODO
-  # banner.background: "#{{todo290.p100.hex}}"
-  # banner.foreground: "#{{todo291.p100.hex}}"
-  # banner.iconForeground: "#{{todo292.p100.hex}}"
+  # banner.background: "#{{todo290.p100}}"
+  # banner.foreground: "#{{todo291.p100}}"
+  # banner.iconForeground: "#{{todo292.p100}}"
 
   # Extensions colors
-  extensionButton.prominentForeground: "#{{background.hex}}"
-  extensionButton.prominentBackground: "#{{primary.p75.hex}}"
-  extensionButton.prominentHoverBackground: "#{{primary.p100.hex}}"
-  extensionBadge.remoteBackground: "#{{primary.p75.hex}}"
-  extensionBadge.remoteForeground: "#{{background.hex}}"
-  extensionIcon.starForeground: "#{{secondary.p100.hex}}"
-  extensionIcon.verifiedForeground: "#{{primary.p100.hex}}"
-  extensionIcon.preReleaseForeground: "#{{primary.p100.hex}}"
+  extensionButton.prominentForeground: "#{{background}}"
+  extensionButton.prominentBackground: "#{{primary.p75}}"
+  extensionButton.prominentHoverBackground: "#{{primary.p100}}"
+  extensionBadge.remoteBackground: "#{{primary.p75}}"
+  extensionBadge.remoteForeground: "#{{background}}"
+  extensionIcon.starForeground: "#{{secondary.p100}}"
+  extensionIcon.verifiedForeground: "#{{primary.p100}}"
+  extensionIcon.preReleaseForeground: "#{{primary.p100}}"
 
   # Quick picker colors
-  pickerGroup.border: "#{{separator.normal.hex}}"
-  pickerGroup.foreground: "#{{primary.p100.hex}}"
-  quickInput.background: "#{{foreground.p10.hex}}"
+  pickerGroup.border: "#{{divider.p25}}"
+  pickerGroup.foreground: "#{{primary.p100}}"
+  quickInput.background: "#{{foreground.p10}}"
   quickInput.foreground: null
-  quickInputList.focusBackground: "#{{foreground.p25.hex}}"
+  quickInputList.focusBackground: "#{{foreground.p25}}"
   quickInputList.focusForeground: null
   quickInputList.focusIconForeground: null
-  quickInputTitle.background: "#{{primary.p25.hex}}" # not tested
+  quickInputTitle.background: "#{{primary.p25}}" # not tested
 
   # Keybinding label colors
-  keybindingLabel.background: "#{{primary.p25.hex}}"
-  keybindingLabel.foreground: "#{{foreground.p100.hex}}"
+  keybindingLabel.background: "#{{primary.p25}}"
+  keybindingLabel.foreground: "#{{foreground.p100}}"
   keybindingLabel.border: null # no border
   keybindingLabel.bottomBorder: null # no border
 
   # Keyboard shortcut table colors
-  keybindingTable.headerBackground: "#{{foreground.p25.hex}}"
-  keybindingTable.rowsBackground: "#{{foreground.p10.hex}}"
+  keybindingTable.headerBackground: "#{{foreground.p25}}"
+  keybindingTable.rowsBackground: "#{{foreground.p10}}"
 
   # Integrated Terminal colors
-  terminal.background: "#{{background.hex}}"
-  terminal.border: "#{{separator.normal.hex}}"
-  terminal.foreground: "#{{foreground.p100.hex}}"
-  terminal.ansiBlack: "#{{ansi.black.hex}}"
-  terminal.ansiBlue: "#{{ansi.blue.hex}}"
-  terminal.ansiBrightBlack: "#{{ansi.bright_black.hex}}"
-  terminal.ansiBrightBlue: "#{{ansi.bright_blue.hex}}"
-  terminal.ansiBrightCyan: "#{{ansi.bright_cyan.hex}}"
-  terminal.ansiBrightGreen: "#{{ansi.bright_green.hex}}"
-  terminal.ansiBrightMagenta: "#{{ansi.bright_magenta.hex}}"
-  terminal.ansiBrightRed: "#{{ansi.bright_red.hex}}"
-  terminal.ansiBrightWhite: "#{{ansi.bright_white.hex}}"
-  terminal.ansiBrightYellow: "#{{ansi.bright_yellow.hex}}"
-  terminal.ansiCyan: "#{{ansi.cyan.hex}}"
-  terminal.ansiGreen: "#{{ansi.green.hex}}"
-  terminal.ansiMagenta: "#{{ansi.magenta.hex}}"
-  terminal.ansiRed: "#{{ansi.red.hex}}"
-  terminal.ansiWhite: "#{{ansi.white.hex}}"
-  terminal.ansiYellow: "#{{ansi.yellow.hex}}"
-  terminal.selectionBackground: "#{{selection.background.hex}}"
+  terminal.background: "#{{background}}"
+  terminal.border: "#{{divider.p25}}"
+  terminal.foreground: "#{{foreground.p100}}"
+  terminal.ansiBlack: "#{{ansi.black}}"
+  terminal.ansiBlue: "#{{ansi.blue}}"
+  terminal.ansiBrightBlack: "#{{ansi.bright_black}}"
+  terminal.ansiBrightBlue: "#{{ansi.bright_blue}}"
+  terminal.ansiBrightCyan: "#{{ansi.bright_cyan}}"
+  terminal.ansiBrightGreen: "#{{ansi.bright_green}}"
+  terminal.ansiBrightMagenta: "#{{ansi.bright_magenta}}"
+  terminal.ansiBrightRed: "#{{ansi.bright_red}}"
+  terminal.ansiBrightWhite: "#{{ansi.bright_white}}"
+  terminal.ansiBrightYellow: "#{{ansi.bright_yellow}}"
+  terminal.ansiCyan: "#{{ansi.cyan}}"
+  terminal.ansiGreen: "#{{ansi.green}}"
+  terminal.ansiMagenta: "#{{ansi.magenta}}"
+  terminal.ansiRed: "#{{ansi.red}}"
+  terminal.ansiWhite: "#{{ansi.white}}"
+  terminal.ansiYellow: "#{{ansi.yellow}}"
+  terminal.selectionBackground: "#{{selection.background}}"
   terminalCursor.background: null # default to editorCursor.background
   terminalCursor.foreground: null # default editorCursor.foreground
   terminal.dropBackground: null # default to editorGroup.dropBackground
   terminal.tab.activeBorder: null # default to tab.activeBorder
 
   # Debug colors
-  # debugToolBar.background: "#{{todo340.p100.hex}}"
-  # debugToolBar.border: "#{{todo341.p100.hex}}"
-  # editor.stackFrameHighlightBackground: "#{{todo342.p100.hex}}"
-  # editor.focusedStackFrameHighlightBackground: "#{{todo343.p100.hex}}"
-  # editor.inlineValuesForeground: "#{{todo344.p100.hex}}"
-  # editor.inlineValuesBackground: "#{{todo345.p100.hex}}"
-  # debugView.exceptionLabelForeground: "#{{todo346.p100.hex}}"
-  # debugView.exceptionLabelBackground: "#{{todo347.p100.hex}}"
-  # debugView.stateLabelForeground: "#{{todo348.p100.hex}}"
-  # debugView.stateLabelBackground: "#{{todo349.p100.hex}}"
-  # debugView.valueChangedHighlight: "#{{todo350.p100.hex}}"
-  # debugTokenExpression.name: "#{{todo351.p100.hex}}"
-  # debugTokenExpression.value: "#{{todo352.p100.hex}}"
-  # debugTokenExpression.string: "#{{todo353.p100.hex}}"
-  # debugTokenExpression.boolean: "#{{todo354.p100.hex}}"
-  # debugTokenExpression.number: "#{{todo355.p100.hex}}"
-  # debugTokenExpression.error: "#{{todo356.p100.hex}}"
+  # debugToolBar.background: "#{{todo340.p100}}"
+  # debugToolBar.border: "#{{todo341.p100}}"
+  # editor.stackFrameHighlightBackground: "#{{todo342.p100}}"
+  # editor.focusedStackFrameHighlightBackground: "#{{todo343.p100}}"
+  # editor.inlineValuesForeground: "#{{todo344.p100}}"
+  # editor.inlineValuesBackground: "#{{todo345.p100}}"
+  # debugView.exceptionLabelForeground: "#{{todo346.p100}}"
+  # debugView.exceptionLabelBackground: "#{{todo347.p100}}"
+  # debugView.stateLabelForeground: "#{{todo348.p100}}"
+  # debugView.stateLabelBackground: "#{{todo349.p100}}"
+  # debugView.valueChangedHighlight: "#{{todo350.p100}}"
+  # debugTokenExpression.name: "#{{todo351.p100}}"
+  # debugTokenExpression.value: "#{{todo352.p100}}"
+  # debugTokenExpression.string: "#{{todo353.p100}}"
+  # debugTokenExpression.boolean: "#{{todo354.p100}}"
+  # debugTokenExpression.number: "#{{todo355.p100}}"
+  # debugTokenExpression.error: "#{{todo356.p100}}"
 
   # Testing colors
-  # testing.iconFailed: "#{{todo357.p100.hex}}"
-  # testing.iconErrored: "#{{todo358.p100.hex}}"
-  # testing.iconPassed: "#{{todo359.p100.hex}}"
-  # testing.runAction: "#{{todo360.p100.hex}}"
-  # testing.iconQueued: "#{{todo361.p100.hex}}"
-  # testing.iconUnset: "#{{todo362.p100.hex}}"
-  # testing.iconSkipped: "#{{todo363.p100.hex}}"
-  # testing.peekBorder: "#{{todo364.p100.hex}}"
-  # testing.peekHeaderBackground: "#{{todo365.p100.hex}}"
-  # testing.message.error.decorationForeground: "#{{todo366.p100.hex}}"
-  # testing.message.error.lineBackground: "#{{todo367.p100.hex}}"
-  # testing.message.info.decorationForeground: "#{{todo368.p100.hex}}"
-  # testing.message.info.lineBackground: "#{{todo369.p100.hex}}"
+  # testing.iconFailed: "#{{todo357.p100}}"
+  # testing.iconErrored: "#{{todo358.p100}}"
+  # testing.iconPassed: "#{{todo359.p100}}"
+  # testing.runAction: "#{{todo360.p100}}"
+  # testing.iconQueued: "#{{todo361.p100}}"
+  # testing.iconUnset: "#{{todo362.p100}}"
+  # testing.iconSkipped: "#{{todo363.p100}}"
+  # testing.peekBorder: "#{{todo364.p100}}"
+  # testing.peekHeaderBackground: "#{{todo365.p100}}"
+  # testing.message.error.decorationForeground: "#{{todo366.p100}}"
+  # testing.message.error.lineBackground: "#{{todo367.p100}}"
+  # testing.message.info.decorationForeground: "#{{todo368.p100}}"
+  # testing.message.info.lineBackground: "#{{todo369.p100}}"
 
   # Welcome page colors
   welcomePage.background: null # default to editor.background
-  # welcomePage.progress.background: "#{{todo371.p100.hex}}"
-  # welcomePage.progress.foreground: "#{{todo372.p100.hex}}"
-  # welcomePage.tileBackground: "#{{todo373.p100.hex}}"
-  # welcomePage.tileHoverBackground: "#{{todo374.p100.hex}}"
-  # welcomePage.tileShadow: "#{{todo375.p100.hex}}"
-  # walkThrough.embeddedEditorBackground: "#{{todo376.p100.hex}}"
+  # welcomePage.progress.background: "#{{todo371.p100}}"
+  # welcomePage.progress.foreground: "#{{todo372.p100}}"
+  # welcomePage.tileBackground: "#{{todo373.p100}}"
+  # welcomePage.tileHoverBackground: "#{{todo374.p100}}"
+  # welcomePage.tileShadow: "#{{todo375.p100}}"
+  # walkThrough.embeddedEditorBackground: "#{{todo376.p100}}"
 
   # Source Control colors
-  # scm.providerBorder: "#{{todo377.p100.hex}}"
+  # scm.providerBorder: "#{{todo377.p100}}"
   # Git colors
-  gitDecoration.addedResourceForeground: "#{{good.p100.hex}}"
-  gitDecoration.modifiedResourceForeground: "#{{warning.p100.hex}}"
-  gitDecoration.deletedResourceForeground: "#{{error.p75.hex}}"
-  gitDecoration.renamedResourceForeground: "#{{good.p75.hex}}"
-  gitDecoration.stageModifiedResourceForeground: "#{{warning.p75.hex}}"
-  gitDecoration.stageDeletedResourceForeground: "#{{error.p75.hex}}"
-  gitDecoration.untrackedResourceForeground: "#{{foreground.p75.hex}}"
-  gitDecoration.ignoredResourceForeground: "#{{foreground.p50.hex}}"
-  gitDecoration.conflictingResourceForeground: "#{{error.p100.hex}}"
-  gitDecoration.submoduleResourceForeground: "#{{info.p100.hex}}"
+  gitDecoration.addedResourceForeground: "#{{good.p100}}"
+  gitDecoration.modifiedResourceForeground: "#{{warning.p100}}"
+  gitDecoration.deletedResourceForeground: "#{{error.p75}}"
+  gitDecoration.renamedResourceForeground: "#{{good.p75}}"
+  gitDecoration.stageModifiedResourceForeground: "#{{warning.p75}}"
+  gitDecoration.stageDeletedResourceForeground: "#{{error.p75}}"
+  gitDecoration.untrackedResourceForeground: "#{{foreground.p75}}"
+  gitDecoration.ignoredResourceForeground: "#{{foreground.p50}}"
+  gitDecoration.conflictingResourceForeground: "#{{error.p100}}"
+  gitDecoration.submoduleResourceForeground: "#{{info.p100}}"
 
   # Settings Editor colors
-  settings.headerForeground: "#{{foreground.p100.hex}}"
-  settings.modifiedItemIndicator: "#{{primary.p75.hex}}"
+  settings.headerForeground: "#{{foreground.p100}}"
+  settings.modifiedItemIndicator: "#{{primary.p75}}"
   settings.dropdownBackground: null
   settings.dropdownForeground: null
   settings.dropdownBorder: null # default to dropdown.border
-  # settings.dropdownListBorder: "#{{todo394.p100.hex}}"
+  # settings.dropdownListBorder: "#{{todo394.p100}}"
   settings.checkboxBackground: null
   settings.checkboxForeground: null
   settings.checkboxBorder: null
-  settings.rowHoverBackground: "#{{foreground.p10.hex}}"
+  settings.rowHoverBackground: "#{{foreground.p10}}"
   settings.textInputBackground: null
   settings.textInputForeground: null
   settings.textInputBorder: null
   settings.numberInputBackground: null
   settings.numberInputForeground: null
   settings.numberInputBorder: null
-  settings.focusedRowBackground: "#{{foreground.p10.hex}}"
-  settings.focusedRowBorder: "#{{primary.p100.hex}}"
+  settings.focusedRowBackground: "#{{foreground.p10}}"
+  settings.focusedRowBorder: "#{{primary.p100}}"
 
   # Breadcrumbs colors
-  breadcrumb.foreground: "#{{foreground.p100.hex}}"
+  breadcrumb.foreground: "#{{foreground.p100}}"
   breadcrumb.background: null # default to editor.background
-  breadcrumb.focusForeground: "#{{foreground.p100.hex}}"
-  breadcrumb.activeSelectionForeground: "#{{foreground.p100.hex}}"
+  breadcrumb.focusForeground: "#{{foreground.p100}}"
+  breadcrumb.activeSelectionForeground: "#{{foreground.p100}}"
   breadcrumbPicker.background: null # default to editorWidget.background
 
   # Snippets colors
-  # editor.snippetTabstopHighlightBackground: "#{{todo412.p100.hex}}"
-  # editor.snippetTabstopHighlightBorder: "#{{todo413.p100.hex}}"
-  # editor.snippetFinalTabstopHighlightBackground: "#{{todo414.p100.hex}}"
-  # editor.snippetFinalTabstopHighlightBorder: "#{{todo415.p100.hex}}"
+  # editor.snippetTabstopHighlightBackground: "#{{todo412.p100}}"
+  # editor.snippetTabstopHighlightBorder: "#{{todo413.p100}}"
+  # editor.snippetFinalTabstopHighlightBackground: "#{{todo414.p100}}"
+  # editor.snippetFinalTabstopHighlightBorder: "#{{todo415.p100}}"
 
   # Symbol Icons colors - use system default
-  # symbolIcon.arrayForeground: "#{{variable_instance.p100.hex}}"
-  # symbolIcon.booleanForeground: "#{{literal.p100.hex}}"
-  # symbolIcon.classForeground: "#{{class.p100.hex}}"
-  # symbolIcon.colorForeground: "#{{foreground.p100.hex}}"
-  # symbolIcon.constantForeground: "#{{constant.p100.hex}}" # not tested
-  # symbolIcon.constructorForeground: "#{{function.p100.hex}}"
-  # symbolIcon.enumeratorForeground: "#{{class.p100.hex}}"
-  # symbolIcon.enumeratorMemberForeground: "#{{constant.p100.hex}}"
-  # symbolIcon.eventForeground: "#{{tag.p100.hex}}" # not tested
-  # symbolIcon.fieldForeground: "#{{variable_instance.p100.hex}}"
-  # symbolIcon.fileForeground: "#{{foreground.p100.hex}}"
-  # symbolIcon.folderForeground: "#{{folder.p100.hex}}"
-  # symbolIcon.functionForeground: "#{{function.p100.hex}}"
-  # symbolIcon.interfaceForeground: "#{{todo429.p100.hex}}" # not tested
-  # symbolIcon.keyForeground: "#{{tag.p100.hex}}" # not tested
-  # symbolIcon.keywordForeground: "#{{keyword.p100.hex}}" # not tested
-  # symbolIcon.methodForeground: "#{{function.p100.hex}}"
-  # symbolIcon.moduleForeground: "#{{folder.p100.hex}}" # not tested
-  # symbolIcon.namespaceForeground: "#{{folder.p100.hex}}" # not tested
-  # symbolIcon.nullForeground: "#{{literal.p100.hex}}" # not tested
-  # symbolIcon.numberForeground: "#{{literal.p100.hex}}"
-  # symbolIcon.objectForeground: "#{{variable.p100.hex}}"
-  # symbolIcon.operatorForeground: "#{{symbol.p100.hex}}"
-  # symbolIcon.packageForeground: "#{{secondary.p100.hex}}" # not tested
-  # symbolIcon.propertyForeground: "#{{variable_instance.p100.hex}}"
-  # symbolIcon.referenceForeground: "#{{string.p100.hex}}" # not tested
-  # symbolIcon.snippetForeground: "#{{todo443.p100.hex}}" # not tested
-  # symbolIcon.stringForeground: "#{{string.p100.hex}}"
-  # symbolIcon.structForeground: "#{{class.p100.hex}}"
-  # symbolIcon.textForeground: "#{{string.p100.hex}}"
-  # symbolIcon.typeParameterForeground: "#{{parameter.p100.hex}}"
-  # symbolIcon.unitForeground: "#{{class.p100.hex}}"
-  # symbolIcon.variableForeground: "#{{variable.p100.hex}}"
+  # symbolIcon.arrayForeground: "#{{field.p100}}"
+  # symbolIcon.booleanForeground: "#{{literal.p100}}"
+  # symbolIcon.classForeground: "#{{type.p100}}"
+  # symbolIcon.colorForeground: "#{{foreground.p100}}"
+  # symbolIcon.constantForeground: "#{{constant.p100}}" # not tested
+  # symbolIcon.constructorForeground: "#{{function.p100}}"
+  # symbolIcon.enumeratorForeground: "#{{type.p100}}"
+  # symbolIcon.enumeratorMemberForeground: "#{{constant.p100}}"
+  # symbolIcon.eventForeground: "#{{parameter.p100}}" # not tested
+  # symbolIcon.fieldForeground: "#{{field.p100}}"
+  # symbolIcon.fileForeground: "#{{foreground.p100}}"
+  # symbolIcon.folderForeground: "#{{fold.p100}}"
+  # symbolIcon.functionForeground: "#{{function.p100}}"
+  # symbolIcon.interfaceForeground: "#{{todo429.p100}}" # not tested
+  # symbolIcon.keyForeground: "#{{parameter.p100}}" # not tested
+  # symbolIcon.keywordForeground: "#{{keyword.p100}}" # not tested
+  # symbolIcon.methodForeground: "#{{function.p100}}"
+  # symbolIcon.moduleForeground: "#{{fold.p100}}" # not tested
+  # symbolIcon.namespaceForeground: "#{{fold.p100}}" # not tested
+  # symbolIcon.nullForeground: "#{{literal.p100}}" # not tested
+  # symbolIcon.numberForeground: "#{{literal.p100}}"
+  # symbolIcon.objectForeground: "#{{ariable.p100}}"
+  # symbolIcon.operatorForeground: "#{{operator.p100}}"
+  # symbolIcon.packageForeground: "#{{secondary.p100}}" # not tested
+  # symbolIcon.propertyForeground: "#{{field.p100}}"
+  # symbolIcon.referenceForeground: "#{{string.p100}}" # not tested
+  # symbolIcon.snippetForeground: "#{{todo443.p100}}" # not tested
+  # symbolIcon.stringForeground: "#{{string.p100}}"
+  # symbolIcon.structForeground: "#{{type.p100}}"
+  # symbolIcon.textForeground: "#{{string.p100}}"
+  # symbolIcon.typeParameterForeground: "#{{parameter.p100}}"
+  # symbolIcon.unitForeground: "#{{type.p100}}"
+  # symbolIcon.variableForeground: "#{{variable.p100}}"
   # Debug Icons colors
-  # debugIcon.breakpointForeground: "#{{todo450.p100.hex}}"
-  # debugIcon.breakpointDisabledForeground: "#{{todo451.p100.hex}}"
-  # debugIcon.breakpointUnverifiedForeground: "#{{todo452.p100.hex}}"
-  # debugIcon.breakpointCurrentStackframeForeground: "#{{todo453.p100.hex}}"
-  # debugIcon.breakpointStackframeForeground: "#{{todo454.p100.hex}}"
-  # debugIcon.startForeground: "#{{todo455.p100.hex}}"
-  # debugIcon.pauseForeground: "#{{todo456.p100.hex}}"
-  # debugIcon.stopForeground: "#{{todo457.p100.hex}}"
-  # debugIcon.disconnectForeground: "#{{todo458.p100.hex}}"
-  # debugIcon.restartForeground: "#{{todo459.p100.hex}}"
-  # debugIcon.stepOverForeground: "#{{todo460.p100.hex}}"
-  # debugIcon.stepIntoForeground: "#{{todo461.p100.hex}}"
-  # debugIcon.stepOutForeground: "#{{todo462.p100.hex}}"
-  # debugIcon.continueForeground: "#{{todo463.p100.hex}}"
-  # debugIcon.stepBackForeground: "#{{todo464.p100.hex}}"
-  # debugConsole.infoForeground: "#{{todo465.p100.hex}}"
-  # debugConsole.warningForeground: "#{{todo466.p100.hex}}"
-  # debugConsole.errorForeground: "#{{todo467.p100.hex}}"
-  # debugConsole.sourceForeground: "#{{todo468.p100.hex}}"
-  # debugConsoleInputIcon.foreground: "#{{todo469.p100.hex}}"
+  # debugIcon.breakpointForeground: "#{{todo450.p100}}"
+  # debugIcon.breakpointDisabledForeground: "#{{todo451.p100}}"
+  # debugIcon.breakpointUnverifiedForeground: "#{{todo452.p100}}"
+  # debugIcon.breakpointCurrentStackframeForeground: "#{{todo453.p100}}"
+  # debugIcon.breakpointStackframeForeground: "#{{todo454.p100}}"
+  # debugIcon.startForeground: "#{{todo455.p100}}"
+  # debugIcon.pauseForeground: "#{{todo456.p100}}"
+  # debugIcon.stopForeground: "#{{todo457.p100}}"
+  # debugIcon.disconnectForeground: "#{{todo458.p100}}"
+  # debugIcon.restartForeground: "#{{todo459.p100}}"
+  # debugIcon.stepOverForeground: "#{{todo460.p100}}"
+  # debugIcon.stepIntoForeground: "#{{todo461.p100}}"
+  # debugIcon.stepOutForeground: "#{{todo462.p100}}"
+  # debugIcon.continueForeground: "#{{todo463.p100}}"
+  # debugIcon.stepBackForeground: "#{{todo464.p100}}"
+  # debugConsole.infoForeground: "#{{todo465.p100}}"
+  # debugConsole.warningForeground: "#{{todo466.p100}}"
+  # debugConsole.errorForeground: "#{{todo467.p100}}"
+  # debugConsole.sourceForeground: "#{{todo468.p100}}"
+  # debugConsoleInputIcon.foreground: "#{{todo469.p100}}"
   # Notebook colors
-  # notebook.cellBorderColor: "#{{todo470.p100.hex}}"
-  # notebook.cellHoverBackground: "#{{todo471.p100.hex}}"
-  # notebook.cellInsertionIndicator: "#{{todo472.p100.hex}}"
-  # notebook.cellStatusBarItemHoverBackground: "#{{todo473.p100.hex}}"
-  # notebook.cellToolbarSeparator: "#{{todo474.p100.hex}}"
-  # notebook.cellEditorBackground: "#{{todo475.p100.hex}}"
-  # notebook.focusedCellBackground: "#{{todo476.p100.hex}}"
-  # notebook.focusedCellBorder: "#{{todo477.p100.hex}}"
-  # notebook.focusedEditorBorder: "#{{todo478.p100.hex}}"
-  # notebook.inactiveFocusedCellBorder: "#{{todo479.p100.hex}}"
-  # notebook.inactiveSelectedCellBorder: "#{{todo480.p100.hex}}"
-  # notebook.outputContainerBackgroundColor: "#{{todo481.p100.hex}}"
-  # notebook.outputContainerBorderColor: "#{{todo482.p100.hex}}"
-  # notebook.selectedCellBackground: "#{{todo483.p100.hex}}"
-  # notebook.selectedCellBorder: "#{{todo484.p100.hex}}"
-  # notebook.symbolHighlightBackground: "#{{todo485.p100.hex}}"
-  # notebookScrollbarSlider.activeBackground: "#{{todo486.p100.hex}}"
-  # notebookScrollbarSlider.background: "#{{todo487.p100.hex}}"
-  # notebookScrollbarSlider.hoverBackground: "#{{todo488.p100.hex}}"
-  # notebookStatusErrorIcon.foreground: "#{{todo489.p100.hex}}"
-  # notebookStatusRunningIcon.foreground: "#{{todo480.p100.hex}}"
-  # notebookStatusSuccessIcon.foreground: "#{{todo491.p100.hex}}"
+  # notebook.cellBorderColor: "#{{todo470.p100}}"
+  # notebook.cellHoverBackground: "#{{todo471.p100}}"
+  # notebook.cellInsertionIndicator: "#{{todo472.p100}}"
+  # notebook.cellStatusBarItemHoverBackground: "#{{todo473.p100}}"
+  # notebook.cellToolbarSeparator: "#{{todo474.p100}}"
+  # notebook.cellEditorBackground: "#{{todo475.p100}}"
+  # notebook.focusedCellBackground: "#{{todo476.p100}}"
+  # notebook.focusedCellBorder: "#{{todo477.p100}}"
+  # notebook.focusedEditorBorder: "#{{todo478.p100}}"
+  # notebook.inactiveFocusedCellBorder: "#{{todo479.p100}}"
+  # notebook.inactiveSelectedCellBorder: "#{{todo480.p100}}"
+  # notebook.outputContainerBackgroundColor: "#{{todo481.p100}}"
+  # notebook.outputContainerBorderColor: "#{{todo482.p100}}"
+  # notebook.selectedCellBackground: "#{{todo483.p100}}"
+  # notebook.selectedCellBorder: "#{{todo484.p100}}"
+  # notebook.symbolHighlightBackground: "#{{todo485.p100}}"
+  # notebookScrollbarSlider.activeBackground: "#{{todo486.p100}}"
+  # notebookScrollbarSlider.background: "#{{todo487.p100}}"
+  # notebookScrollbarSlider.hoverBackground: "#{{todo488.p100}}"
+  # notebookStatusErrorIcon.foreground: "#{{todo489.p100}}"
+  # notebookStatusRunningIcon.foreground: "#{{todo480.p100}}"
+  # notebookStatusSuccessIcon.foreground: "#{{todo491.p100}}"
 
   # Chart colors
-  # charts.foreground: "#{{todo492.p100.hex}}"
-  # charts.lines: "#{{todo493.p100.hex}}"
-  # charts.red: "#{{todo494.p100.hex}}"
-  # charts.blue: "#{{todo495.p100.hex}}"
-  # charts.yellow: "#{{todo496.p100.hex}}"
-  # charts.orange: "#{{todo497.p100.hex}}"
-  # charts.green: "#{{todo498.p100.hex}}"
-  # charts.purple: "#{{todo499.p100.hex}}"
+  # charts.foreground: "#{{todo492.p100}}"
+  # charts.lines: "#{{todo493.p100}}"
+  # charts.red: "#{{todo494.p100}}"
+  # charts.blue: "#{{todo495.p100}}"
+  # charts.yellow: "#{{todo496.p100}}"
+  # charts.orange: "#{{todo497.p100}}"
+  # charts.green: "#{{todo498.p100}}"
+  # charts.purple: "#{{todo499.p100}}"
 
   # Ports Colors
-  ports.iconRunningProcessForeground: "#{{function.p100.hex}}"
+  ports.iconRunningProcessForeground: "#{{function.p100}}"
 tokenColors:
 - name: Keyword
   scope:
@@ -693,8 +694,14 @@ tokenColors:
   - storage.type.js # javascript: constructor
   - storage.type.ts
   settings:
-    foreground: "#{{keyword.p100.hex}}"
-- name: Symbols
+    foreground: "#{{keyword.p100}}"
+- name: Escape
+  scope:
+  - constant.character.escape
+
+  settings:
+    foreground: "#{{escape.p100}}"
+- name: Operator
   scope:
   - keyword.operator
   - constant.character.escape
@@ -707,8 +714,8 @@ tokenColors:
   # - meta.brace.square
 
   settings:
-    foreground: "#{{symbol.p100.hex}}"
-- name: Class
+    foreground: "#{{operator.p100}}"
+- name: Type
   scope:
   - entity.name.type # java: class, enum
   - entity.other.attribute-name.class
@@ -718,45 +725,45 @@ tokenColors:
   - support.type.primitive 
   - storage.type
   settings:
-    foreground: "#{{class.p100.hex}}"
+    foreground: "#{{type.p100}}"
 - name: Tag
   scope:
   - entity.name.tag # json
   - storage.type.annotation # java
   - variable.parameter # java
   settings:
-    foreground: "#{{tag.p100.hex}}"
+    foreground: "#{{parameter.p100}}"
 - name: String
   scope:
   - string
   - markup.quote
   - constant.other.reference
   settings:
-    foreground: "#{{string.p100.hex}}"
+    foreground: "#{{string.p100}}"
 - name: Comment
   scope:
   - comment
   - meta.separator
   settings:
-    foreground: "#{{foreground.p75.hex}}"
+    foreground: "#{{comment.p75}}"
 - name: Function
   scope:
   - entity.name.function
   settings:
-    foreground: "#{{function.p100.hex}}"
+    foreground: "#{{function.p100}}"
 - name: literal
   scope:
   - constant.numeric
   - constant.language.null
   - constant.language.boolean
   settings:
-    foreground: "#{{literal.p100.hex}}"
+    foreground: "#{{literal.p100}}"
 - name: variable
   scope:
   - variable
   - meta.import variable.other.readwrite.alias
   settings:
-    foreground: "#{{variable.p100.hex}}"
+    foreground: "#{{variable.p100}}"
 - name: Instance Variable
   scope:
   - variable.other.property
@@ -768,7 +775,7 @@ tokenColors:
   - support.type.property-name # css
   - meta.import variable # typescript import
   settings:
-    foreground: "#{{variable_instance.p100.hex}}"
+    foreground: "#{{field.p100}}"
 - name: Constant
   scope:
   - variable.other.enummember
@@ -777,35 +784,36 @@ tokenColors:
   - meta.attribute.id entity.other.attribute-name # css
   - punctuation.definition.character-class # regexp
   settings:
-    foreground: "#{{constant.p100.hex}}"
+    foreground: "#{{constant.p100}}"
 - name: Normal
   scope:
   settings:
-    foreground: "#{{foreground.p100.hex}}"
+    foreground: "#{{foreground.p100}}"
 - name: Highlight
   scope:
   - entity.other.attribute-name.pseudo-class # css
   settings:
-    foreground: "#{{highlight.p100.hex}}"
+    foreground: "#{{highlight.p100}}"
 - name: Primary
   scope:
   - heading
   - markup.bold
   settings:
-    foreground: "#{{primary.p100.hex}}"
+    foreground: "#{{primary.p100}}"
 - name: Secondary
   scope:
   - markup.inline.raw
   - markup.italic
   settings:
-    foreground: "#{{secondary.p100.hex}}"
+    foreground: "#{{secondary.p100}}"
 - name: Link
   scope:
   - markup.underline.link # markdown
   settings:
-    foreground: "#{{link.p100.hex}}"
+    foreground: "#{{link.p100}}"
 - name: Bold
   scope:
   - heading
   settings:
     fontStyle: bold
+{{/hex}}
