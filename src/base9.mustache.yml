@@ -83,10 +83,10 @@ colors:
 
   # Badge
   badge.foreground: "#{{background}}"
-  badge.background: "#{{secondary.p100}}"
+  badge.background: "#{{secondary.p75}}"
 
   # Progress bar
-  progressBar.background: "#{{secondary.p100}}"
+  progressBar.background: "#{{secondary.p75}}"
 
   # Lists and trees
   list.activeSelectionBackground: "#{{primary.p25}}"
@@ -123,7 +123,7 @@ colors:
   activityBar.foreground: "#{{foreground.p100}}"
   activityBar.inactiveForeground: "#{{foreground.p75}}"
   activityBar.border: null
-  activityBarBadge.background: "#{{secondary.p100}}"
+  activityBarBadge.background: "#{{secondary.p75}}"
   activityBarBadge.foreground: "#{{background}}"
   activityBar.activeBorder: "#{{primary.p50}}"
   activityBar.activeBackground: "#{{primary.p25}}"
@@ -141,7 +141,7 @@ colors:
 
   # Minimap
   minimap.findMatchHighlight: null
-  minimap.selectionHighlight: "#{{selection.background}}"
+  minimap.selectionHighlight: "#{{selection.p25}}"
   minimap.errorHighlight: "#{{error.p25}}"
   minimap.warningHighlight: "#{{warning.p25}}"
   minimap.background: null # default to editor.background
@@ -298,11 +298,11 @@ colors:
   # \"
   # "\"editorUnnecessaryCode.border\: "#{{todo165.p100}}"
   editorGutter.background: null # default to editor.background
-  editorGutter.modifiedBackground: "#{{warning.p100}}"
-  editorGutter.addedBackground: "#{{green.p100}}"
-  editorGutter.deletedBackground: "#{{red.p100}}"
+  editorGutter.modifiedBackground: "#{{warning.p50}}"
+  editorGutter.addedBackground: "#{{green.p50}}"
+  editorGutter.deletedBackground: "#{{red.p50}}"
   # editorGutter.commentRangeForeground: "#{{todo170.p100}}"
-  editorGutter.foldingControlForeground: "#{{secondary.p100}}"
+  editorGutter.foldingControlForeground: "#{{secondary.p75}}"
   # Diff editor colors
   diffEditor.insertedTextBackground: "#{{green.p25}}"
   diffEditor.insertedTextBorder: null # do not highlight
@@ -373,9 +373,9 @@ colors:
   # Panel colors
   panel.background: null
   panel.border: null
-  panel.dropBorder: "#{{drag.background}}"
-  panelTitle.activeBorder: "#{{divider.p50}}"
-  panelTitle.activeForeground: "#{{foreground.p100}}"
+  panel.dropBorder: "#{{primary.p75}}"
+  panelTitle.activeBorder: "#{{primary.p50}}"
+  panelTitle.activeForeground: null # default to foreground.p100
   panelTitle.inactiveForeground: "#{{foreground.p75}}"
   # panelInput.border: "#{{todo238.p100}}"
   # panelSection.border: "#{{todo239.p100}}"
@@ -492,7 +492,7 @@ colors:
   terminal.ansiRed: "#{{ansi.red}}"
   terminal.ansiWhite: "#{{ansi.white}}"
   terminal.ansiYellow: "#{{ansi.yellow}}"
-  terminal.selectionBackground: "#{{selection.background}}"
+  terminal.selectionBackground: "#{{selection.p25}}"
   terminalCursor.background: null # default to editorCursor.background
   terminalCursor.foreground: null # default editorCursor.foreground
   terminal.dropBackground: null # default to editorGroup.dropBackground
@@ -573,7 +573,7 @@ colors:
   settings.numberInputForeground: null
   settings.numberInputBorder: null
   settings.focusedRowBackground: "#{{foreground.p10}}"
-  settings.focusedRowBorder: "#{{primary.p100}}"
+  settings.focusedRowBorder: "#{{primary.p75}}"
 
   # Breadcrumbs colors
   breadcrumb.foreground: "#{{foreground.p100}}"
