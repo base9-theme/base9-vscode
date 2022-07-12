@@ -29,8 +29,8 @@ colors:
   # textBlockQuote.background: "#{{todo7.p100}}"
   # textBlockQuote.border: "#{{todo8.p100}}"
   textCodeBlock.background: "#{{foreground.p25}}"
-  textLink.activeForeground: "#{{primary.p100}}"
-  textLink.foreground: "#{{primary.p75}}"
+  textLink.activeForeground: "#{{primary.p75}}"
+  textLink.foreground: "#{{primary.p100}}"
   textPreformat.foreground: "#{{quote.p100}}"
   # textSeparator.foreground: "#{{todo10.p100}}"
 
@@ -221,7 +221,7 @@ colors:
   editor.lineHighlightBackground: "#{{foreground.p10}}"
   editor.lineHighlightBorder: null
   editorUnicodeHighlight.border: "#{{nontext.p75}}"
-  editorLink.activeForeground: "#{{link.p100}}"
+  editorLink.activeForeground: "#{{link.p75}}"
   # editor.rangeHighlightBackground: null # default to editor.findMtchBackground
   # editor.rangeHighlightBackground: null # default to editor.findMtchBackground
   editor.rangeHighlightBorder: null # default to editor.findMatchBorder
