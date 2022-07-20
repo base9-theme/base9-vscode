@@ -1,6 +1,6 @@
 import Color = require('color');
 import * as vscode from 'vscode';
-import { fromPaletteString, render } from 'base9-core';
+import { renderString } from 'base9-builder-node';
 import * as fs from 'fs';
 import * as path from 'path';
 import _ from 'lodash';
@@ -57,8 +57,7 @@ async function generateTheme(palette?: string): Promise<void> {
 
 	const template = fs.readFileSync(templateFile, {encoding: 'utf8'});
 
-	const cs = fromPaletteString(palette)!;
-	const outputYaml = render(template, cs);
+	const outputYaml = renderString(palette, template);
 	const output = JSON.stringify(yaml.parse(outputYaml), undefined, "  ");
 
 	fs.writeFileSync(themeFile, output);

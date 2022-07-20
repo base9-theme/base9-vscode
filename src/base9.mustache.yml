@@ -1,4 +1,3 @@
-{{#hex}}
 $schema: vscode://schemas/color-theme
 name: base9
 author: Forrest Li
@@ -125,7 +124,7 @@ colors:
   activityBar.border: null
   activityBarBadge.background: "#{{secondary.p75}}"
   activityBarBadge.foreground: "#{{background}}"
-  activityBar.activeBorder: "#{{primary.p50}}"
+  activityBar.activeBorder: "#{{primary.p75}}"
   activityBar.activeBackground: "#{{primary.p25}}"
   activityBar.activeFocusBorder: null
 
@@ -492,7 +491,8 @@ colors:
   terminal.ansiRed: "#{{ansi.red}}"
   terminal.ansiWhite: "#{{ansi.white}}"
   terminal.ansiYellow: "#{{ansi.yellow}}"
-  terminal.selectionBackground: "#{{selection.p25}}"
+  terminal.selectionBackground: "#{{selection.p75}}"
+  terminal.selectionForeground: "#{{background}}"
   terminalCursor.background: null # default to editorCursor.background
   terminalCursor.foreground: null # default editorCursor.foreground
   terminal.dropBackground: null # default to editorGroup.dropBackground
@@ -816,4 +816,3 @@ tokenColors:
   - heading
   settings:
     fontStyle: bold
-{{/hex}}
