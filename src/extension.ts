@@ -1,9 +1,7 @@
-import Color = require('color');
 import * as vscode from 'vscode';
 import { renderString } from 'base9-builder-node';
 import * as fs from 'fs';
 import * as path from 'path';
-import _ from 'lodash';
 import yaml from 'yaml';
 
 const PALETTE = 'base9.palette';
