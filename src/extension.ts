@@ -5,8 +5,8 @@ import * as path from 'path';
 import yaml from 'yaml';
 
 const PALETTE = 'base9.palette';
-const themeFile: string = path.resolve(__dirname, '../themes/base9.json');
-const templateFile: string = path.resolve(__dirname, '../src/base9.mustache.yml');
+const themePath: string = path.resolve(__dirname, '../themes/base9.json');
+const templatePath: string = path.resolve(__dirname, '../src/base9.mustache.yml');
 
 // const semanticFile: string = path.resolve(__dirname, '../src/semantic.yml');
 
@@ -15,7 +15,10 @@ const templateFile: string = path.resolve(__dirname, '../src/base9.mustache.yml'
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
-	fs.watchFile(templateFile, {interval: 800}, (e, n) => {
+	if(!fs.existsSync(themePath)) {
+		generateTheme();
+	}
+	fs.watchFile(templatePath, {interval: 1000}, (e, n) => {
 		console.log("template changed");
 		generateTheme();
 	});
@@ -53,12 +56,12 @@ async function generateTheme(palette?: string): Promise<void> {
 			palette = vscode.workspace.getConfiguration().get(PALETTE) as string;
 	}
 
-	const template = fs.readFileSync(templateFile, {encoding: 'utf8'});
+	const template = fs.readFileSync(templatePath, {encoding: 'utf8'});
 
 	const outputYaml = renderString(palette, template);
 	const output = JSON.stringify(yaml.parse(outputYaml), undefined, "  ");
 
-	fs.writeFileSync(themeFile, output);
+	fs.writeFileSync(themePath, output);
 
 	await promptRestart("Please Restart.");
 }

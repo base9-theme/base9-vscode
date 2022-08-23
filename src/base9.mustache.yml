@@ -3,6 +3,7 @@ name: base9
 author: Forrest Li
 maintainers:
   - Forrest Li <lijiaqigreat@gmail.com>
+base9Palette: {{PALETTE}}
 semanticClass: theme.base9
 semanticHighlighting: true
 colors:
@@ -730,7 +731,6 @@ tokenColors:
     foreground: "#{{type.p100.hex}}"
 - name: Tag
   scope:
-  - entity.name.tag # json
   - storage.type.annotation # java
   - variable.parameter # java
   settings:
@@ -769,6 +769,7 @@ tokenColors:
     foreground: "#{{variable.p100.hex}}"
 - name: Instance Variable
   scope:
+  - entity.name.tag # json
   - variable.other.property
   - variable.other.normal.shell
   - punctuation.definition.variable.shell
