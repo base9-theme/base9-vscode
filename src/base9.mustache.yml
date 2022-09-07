@@ -3,7 +3,7 @@ name: base9
 author: Forrest Li
 maintainers:
   - Forrest Li <lijiaqigreat@gmail.com>
-base9Palette: {{PALETTE}}
+base9Palette: "{{PALETTE}}"
 semanticClass: theme.base9
 semanticHighlighting: true
 colors:
@@ -695,6 +695,7 @@ tokenColors:
   - storage.type.js # javascript: constructor
   - storage.type.ts
   - storage.type.type.ts
+  - source.css support.function
   settings:
     foreground: "#{{keyword.p100.hex}}"
 - name: Escape
@@ -721,8 +722,6 @@ tokenColors:
 - name: Type
   scope:
   - entity.name.type # java: class, enum
-  - entity.other.attribute-name.class
-  - meta.attribute.class entity.other.attribute-name # css
   - punctuation.definition.group # regexp
   # typescript: number
   - support.type.primitive 
@@ -784,8 +783,6 @@ tokenColors:
   scope:
   - variable.other.enummember
   - variable.other.constant
-  - entity.other.attribute-name.id
-  - meta.attribute.id entity.other.attribute-name # css
   - punctuation.definition.character-class # regexp
   settings:
     foreground: "#{{constant.p100.hex}}"
@@ -793,11 +790,6 @@ tokenColors:
   scope:
   settings:
     foreground: "#{{foreground.p100.hex}}"
-- name: Highlight
-  scope:
-  - entity.other.attribute-name.pseudo-class # css
-  settings:
-    foreground: "#{{highlight.p100.hex}}"
 - name: Primary
   scope:
   - heading
@@ -808,6 +800,8 @@ tokenColors:
   scope:
   - markup.inline.raw
   - markup.italic
+  - markup.bold
+  - markup.strikethrough
   settings:
     foreground: "#{{secondary.p100.hex}}"
 - name: Link
@@ -820,3 +814,38 @@ tokenColors:
   - heading
   settings:
     fontStyle: bold
+- name: CSS Element
+  scope:
+  - entity.name.tag.html
+  - entity.name.tag.css
+  - entity.name.tag.script.html.vue
+  - entity.name.tag.style.html.vue
+  - entity.name.tag.template.html.vue
+  settings:
+    foreground: "#{{css.element.p100.hex}}"
+- name: CSS Id
+  scope:
+  - entity.other.attribute-name.id.css
+  - entity.other.attribute-name.id.html
+  - meta.attribute.id.html string
+  settings:
+    foreground: "#{{css.id.p100.hex}}"
+- name: CSS Class
+  scope:
+  - entity.other.attribute-name.class.css
+  - entity.other.attribute-name.class.html
+  - meta.attribute.class.html string
+  settings:
+    foreground: "#{{css.class.p100.hex}}"
+- name: CSS Pseudo Class
+  scope:
+  - entity.other.attribute-name.pseudo-class.css
+  - entity.other.attribute-name.pseudo-class.html
+  settings:
+    foreground: "#{{css.pseudo.p100.hex}}"
+- name: CSS Attribute Name
+  scope:
+  - entity.other.attribute-name.css
+  - entity.other.attribute-name.html
+  settings:
+    foreground: "#{{field.p100.hex}}"
