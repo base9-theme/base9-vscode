@@ -1,14 +1,14 @@
 # base9-vscode
 
-Base8 Color theme for vscode.
+Base9 color theme for vscode.
 
 ## How to use
 
 * Set color theme to base9.
-* To change color, go to `base9.palette` setting.
+* To use custom color palette, go to Setting and search for `base9.palette`.
 * For more info on how to pick colors, go to
-[base9 website](https://base9-theme.github.io/about) or any color picker
-website and paste in 9 colors in correct format.
+[base9 website](https://base9-theme.github.io) or any color picker
+website and paste in 9 colors in the correct format.
 
 ## Contribute
 
